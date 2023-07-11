@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellon M | Fullstack Developer</title>
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+      supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+      </script>
     <link rel="stylesheet" href="./src/styles/css/index.css">
     <script src="/dist/pages/about.js"></script>
-    <script src="/dist/pages/work.js"></script>
+    <script src="/dist/pages/works.js"></script>
     <script src="/dist/pages/home.js"></script>
   </head>
   <body>
     <div id="root"></div> 
-    <script src="/dist/app.js"></script>
+    <script type="module" src="/dist/app.js"></script>
+    <script type="module" src="/dist/ts/homesection/index.js"></script>
   </body>
 </html>

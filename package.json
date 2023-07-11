@@ -10,18 +10,42 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@parcel/transformer-glsl": "^2.8.2",
     "@types/gulp": "^4.0.10",
     "@types/gulp-sass": "^5.0.0",
+    "@types/imagesloaded": "^4.1.2",
     "@types/node": "^18.11.18",
+    "@types/splitting": "^1.0.1",
+    "@types/three": "^0.149.0",
+    "assert": "^2.0.0",
+    "buffer": "^5.7.1",
+    "constants-browserify": "^1.0.0",
     "gulp": "^4.0.2",
+    "os-browserify": "^0.3.0",
     "parcel": "^2.8.2",
-    "typescript": "^4.9.4"
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "typescript": "^4.9.4",
+    "util": "^0.12.5"
   },
   "dependencies": {
+    "@types/webxr": "^0.5.1",
+    "babel-plugin-glsl": "^1.0.0",
+    "babel-plugin-glslify": "^2.0.0",
+    "glsl-noise": "^0.0.0",
+    "glslify": "^7.0.0",
+    "glslify-loader": "^2.0.0",
+    "gsap": "^3.11.5",
     "gulp-sass": "^5.1.0",
     "imagesloaded": "^5.0.0",
     "sass": "^1.58.0",
     "splitting": "^1.0.6",
+    "three": "^0.149.0",
+    "tiny-emitter": "^2.1.0",
     "webfontloader": "^1.6.28"
   }
 }

@@ -1,3 +1,6 @@
+import { lerp } from "./ts/utils";
+
+// SPA implementation
 type RouteType = {
   [key: string] : string
 }
@@ -24,3 +27,4 @@ const onNavigate = (pathname: string) => {
 window.onpopstate = () => {
   root.innerHTML = routes[window.location.pathname];
 };
+
