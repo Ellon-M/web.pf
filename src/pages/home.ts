@@ -146,7 +146,6 @@ const home = `
         </div>
       </div>
     </div>
-  </div>
   <div class="sec-2-container">
     <h2 class="projects-title">
       <span class="projects-title-h2">Some</span>
@@ -406,10 +405,12 @@ const home = `
     </div>
   </div>
   <div class="section-contacts">
+    <div class="section-before-footer">
     <div class="before-footer">
-      <h2 class="before-footer">
+      <h2 class="before-footer-h2">
         Get in touch
       </h2>
+    </div>
     </div>
     <footer class="footer">
       <div class="footer-inner">
@@ -510,12 +511,16 @@ const home = `
               </div>
             </div>
           </div>
-          <button class="footer-btn">
-            <span class="footer-btn-text">Send a request</span>
+          <button class="button footer-btn">
+            <span class="footer-btn-text"><span>Send a request</span></span>
             <span class="footer-btn-sticky">
               <span class="footer-btn-bg"></span>
               <span class="footer-btn-border"></span>
             </span>
+            <svg viewBox="0 0 200 200" class="footer-request-blob">
+            <path fill="#FFFFFF" d="M13.7,-27.7C18,-21.3,21.8,-18,25,-14C28.2,-9.9,30.8,-4.9,32,0.7C33.3,6.4,33.3,12.8,30.6,17.7C27.8,22.6,22.4,25.9,16.8,39.3C11.3,52.7,5.6,76.2,-3.5,82.2C-12.6,88.2,-25.1,76.8,-35.3,66C-45.4,55.2,-53,45.1,-60,34.2C-67.1,23.4,-73.4,11.7,-70.7,1.6C-68,-8.6,-56.2,-17.1,-50.5,-30.2C-44.8,-43.3,-45.1,-60.9,-37.6,-65.5C-30.2,-70.2,-15.1,-61.8,-5.2,-52.8C4.7,-43.8,9.4,-34.2,13.7,-27.7Z" transform="translate(100 100)" id="request-btn"/>
+            </svg>
+            </svg>
             <div class="footer-btn-sticky-area"></div>
           </button>
         </div>
@@ -537,6 +542,7 @@ const home = `
         </div>
       </div>
     </footer>
+  </div>
   </div>
 </div>
 </div>

@@ -1,5 +1,3 @@
-import { lerp } from "./ts/utils";
-
 // SPA implementation
 type RouteType = {
   [key: string] : string
@@ -8,7 +6,7 @@ type RouteType = {
 const routes: RouteType = {
     '/': home,
     '/about': about,
-    '/work': work
+    '/contact': contact
 }
 
 const root: HTMLElement = document.querySelector('#root')!;
