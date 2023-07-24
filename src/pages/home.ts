@@ -324,6 +324,9 @@ const home = `
         <div class="skills-item">&nbsp; — My skills</div>
         <div class="skills-item">&nbsp; — My skills</div>
         <div class="skills-item">&nbsp; — My skills</div>
+        <div class="skills-item">&nbsp; — My skills</div>
+        <div class="skills-item">&nbsp; — My skills</div>
+        <div class="skills-item">&nbsp; — My skills</div>
       </div>
     </div>
     <div class="skills">
@@ -401,6 +404,16 @@ const home = `
         <div class="skill-name">HOLY</div>
         <div class="skill-desc">YOU COULD BE MY UNINTENDED CHOICE TO LIVE MY LIFE EXTENDED YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
         <div class="skill-line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="about">
+    <div class="about-container">
+      <h2> ab<span class="ita">o</span>ut myself </h2>
+      <div class="about-more-info">
+        <p>These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates </p>
+        <p>and their chaplains with the goodly echo they made; and besotted us to the gay imitation of a lordly Imprimatur</p>
+        <p>or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur</p>
       </div>
     </div>
   </div>
