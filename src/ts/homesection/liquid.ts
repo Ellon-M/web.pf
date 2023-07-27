@@ -5,22 +5,31 @@ import { Magnetic } from './magnetic';
 interface DOMEl {
     mask: any;
     circle: any;
+    heading: any,
+    footer: any,
+    words: any
 }
 
 export class Liquid {
   DOM: DOMEl;
 
   constructor() {
-    this.DOM = { mask: undefined, circle: undefined };
+    this.DOM = { mask: undefined, circle: undefined, heading: undefined, footer: undefined, words: undefined };
     this.DOM.circle = document.querySelector('.footer-btn') as Element;
     this.DOM.mask = document.querySelector('#request-btn');
+    this.DOM.footer = document.querySelector('.footer');
+    this.DOM.heading = document.querySelector('.before-footer-h2');
+    this.DOM.words = [...document.querySelectorAll('.word')] as Array<Element>;
     requestAnimationFrame(() => this.initEvents());
   }
 
   initEvents() {
     window.addEventListener('mousemove', ev => getMousePos(ev));
     this.DOM.circle.addEventListener('mouseenter', () => this.mouseEnter());
-    this.DOM.circle.addEventListener('mouseleave', () => this.mouseLeave()); 
+    this.DOM.circle.addEventListener('mouseleave', () => this.mouseLeave());
+    this.DOM.circle.addEventListener('click', () => {
+      this.open();
+    })
   } 
 
   mouseEnter() {
@@ -42,6 +51,24 @@ export class Liquid {
       duration: .3,
       y: 180,
       rotation: 30,
+    })
+  }
+
+  open() {
+    gsap.to(this.DOM.heading, {
+      startAt: { opacity: 1, y: 0},
+      y: -70,
+      opacity: 0,
+      duration: 0.6,
+      ease: 'expo'
+    });
+    gsap.to(this.DOM.footer, {
+      opacity: 0,
+      duration: 0.6,
+      ease: 'power2.out',
+      onComplete: () => {
+        window.location.assign('/contact');
+      }
     })
   }
 }

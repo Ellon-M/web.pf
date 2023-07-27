@@ -1,10 +1,20 @@
 const home = `
+<div class="loading-page">
+  <div class="counter">
+    <h1>0%</h1>
+  </div>
+</div>
+<div class="home-container loading">
 <div class="home-nav-top-container home-nav-up">
   <div class="home-nav-container-inner">
     <div class="home-nav-top-left">
       <a href="/" aria-current="page" class="home-nav-top-logo-link">E. M.</a>
     </div>
     <div class="home-nav-top-right">
+      <button aria-label="menu" class="home-nav-burger">
+        <div class="home-nav-burger-line"></div>
+        <div class="home-nav-burger-line"></div>
+      </button>
       <nav class="home-nav-top-nav">
         <ul class="home-nav-top-list">
           <li class="home-nav-top-item">
@@ -27,7 +37,7 @@ const home = `
 <div data-scroll>
 <div data-scroll-content>
   <div class="main">
-    <div class="home">
+    <div id="home" class="home">
       <div class="home-top">
        <h1 class="home-h1 splitted">
          <span class="word">
@@ -66,7 +76,7 @@ const home = `
          </span>
          </h1>
          <div class="home-nav-container">
-           <nav class="home-nav">
+           <nav class="home-nav opaque">
                <ul class="home-nav-top">
                  <li><a href="">Home</a></li>
                  <li><a href="">About</a></li>
@@ -74,14 +84,10 @@ const home = `
                  <li><a href="">Contacts</a></li> 
                </ul>
            </nav>
-           <div class="home-nav-theme-buttons">
-             <button class="home-nav-theme-button">Dark theme</button>
-             <button class="home-nav-theme-button">Light theme</button>
-           </div>
          </div>
       </div>
       <div class="home-bottom">
-        <div class="home-bottom-left">
+        <div class="home-bottom-left opaque">
           Deeps or Skies make for Her a crown in which is every kind of life: all modes of Triple-powered life, of Uncontainable life, of Infinite life.
         </div>
         <div class="home-bottom-right splitted">
@@ -146,7 +152,7 @@ const home = `
         </div>
       </div>
     </div>
-  <div class="sec-2-container">
+  <div id="projects" class="sec-2-container">
     <h2 class="projects-title">
       <span class="projects-title-h2">Some</span>
       <span class="projects-title-h2"><span class="ita">o</span>f my</span>
@@ -318,7 +324,7 @@ const home = `
       </div>
     </div>
   </div>
-  <div class="section-skills">
+  <div id="skills" class="section-skills">
     <div class="skills-title">
       <div class="skills-marquee">
         <div class="skills-item">&nbsp; — My skills</div>
@@ -407,7 +413,7 @@ const home = `
       </div>
     </div>
   </div>
-  <div class="about">
+  <div id="about" class="about">
     <div class="about-container">
       <h2> ab<span class="ita">o</span>ut myself </h2>
       <div class="about-more-info">
@@ -417,7 +423,7 @@ const home = `
       </div>
     </div>
   </div>
-  <div class="section-contacts">
+  <div id="contacts" class="section-contacts">
     <div class="section-before-footer">
     <div class="before-footer">
       <h2 class="before-footer-h2">
@@ -497,28 +503,28 @@ const home = `
               <div class="footer-links-items">
                 <div class="footer-links-items-g">
                   <div class="footer-links-item">
-                    <div class="footer-num"></div>
-                    <a href="" class="footer-link"></a>
+                    <div class="footer-num">01</div>
+                    <a href="#home" class="footer-link">home</a>
                   </div>
                 </div>
                 <div class="footer-links-items-g">
                   <div class="footer-links-item">
-                    <div class="footer-num"></div>
-                    <a href="" class="footer-link"></a>
+                    <div class="footer-num">02</div>
+                    <a href="#about" class="footer-link">about</a>
                   </div>
                   <div class="footer-links-item">
-                    <div class="footer-num"></div>
-                    <a href="" class="footer-link"></a>
+                    <div class="footer-num">03</div>
+                    <a href="#skills" class="footer-link">skills</a>
                   </div>
                 </div>
                 <div class="footer-links-items-g">
                   <div class="footer-links-item">
-                    <div class="footer-num"></div>
-                    <a href="" class="footer-link"></a>
+                    <div class="footer-num">04</div>
+                    <a href="#projects" class="footer-link">projects</a>
                   </div>
                   <div class="footer-links-item">
-                    <div class="footer-num"></div>
-                    <a href="" class="footer-link"></a>
+                    <div class="footer-num">05</div>
+                    <a href="#contacts" class="footer-link">contacts</a>
                   </div>
                 </div>
               </div>
@@ -557,6 +563,7 @@ const home = `
     </footer>
   </div>
   </div>
+</div>
 </div>
 </div>
 `;

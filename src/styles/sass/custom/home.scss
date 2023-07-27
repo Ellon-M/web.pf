@@ -34,6 +34,26 @@ img {
     transition: transform .9s ease,opacity .9s ease;
   }
 
+  &-nav-burger {
+    display: none;
+    padding: 4px;
+    width: 40px;
+    background-color: transparent;
+    height: auto;
+    border: none;
+
+    &-line {
+      width: 100%;
+      height: 2px;
+      background-color: #472425;
+
+      & + .home-nav-burger-line {
+        margin-top: 8px;
+      }
+    }
+
+  }
+
   &-nav-container-inner {
     width: 100%;
     position: relative;
@@ -210,6 +230,10 @@ img {
         &-theme-buttons {
           opacity: 0;
         }
+
+        &-top-item {
+          font-size: 14px;
+        }
       }
 
       &-top {
@@ -246,11 +270,20 @@ img {
     line-height: 0.9em;
     letter-spacing: -.13em;
   }
+
+  .home-nav-burger {
+    display: block;
+  }
+
+  .home-nav-top-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 460px) {
   .home-h1 {
-    font-size: 24vw;
+    font-size: 20vw;
+    line-height: 0.92em;
   }
 }
 

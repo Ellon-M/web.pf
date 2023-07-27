@@ -15,6 +15,8 @@ export class Form {
   formEmail: HTMLElement;
   formDetails: HTMLElement;
   postMessage: HTMLElement;
+  closeBtn: HTMLElement;
+  bodyIn: any;
 
   constructor() {
     this.backBtn = document.querySelector('.form-back-btn') as HTMLElement;
@@ -31,13 +33,13 @@ export class Form {
     this.formEmail = document.querySelector('.form-email') as HTMLElement;
     this.formDetails = document.querySelector('.form-details') as HTMLElement;
     this.postMessage = document.querySelector('.post-submit-message') as HTMLElement;
+    this.closeBtn = document.querySelector('.form-close-btn') as HTMLElement;
 
     this.formName.classList.remove('hidden');
     this.formEmail.classList.add('hidden');
     this.formDetails.classList.add('hidden');
-
-    this.initEvents();
     this.initLoad();
+    this.initEvents();
   }
 
   initEvents() {
@@ -65,9 +67,23 @@ export class Form {
       e.preventDefault();
       this.onSubmit();
     })
+
+    this.closeBtn.addEventListener('click', () => {
+      this.close();
+    })
+  }
+
+  animIn = () => {
+    this.bodyIn = gsap.to(this.formBodyName, {
+      opacity: 1,
+      ease: 'expo',
+      y: 0,
+      duration: 1,
+    });
   }
 
   initLoad() {
+    this.formBodyName.classList.remove('hidden');
     gsap.set(this.formScreen, {
       opacity: 0,
     });
@@ -80,12 +96,22 @@ export class Form {
       ease: 'expo.out',
       duration: 1,
     });
-    gsap.to(this.formBodyName, {
-      opacity: 1,
-      ease: 'expo',
-      y: 0,
-      duration: 1,
-    });
+
+    this.animIn();
+  }
+
+  close() {
+    gsap.to(this.formScreen, {
+      startAt: {opacity: 1},
+      opacity: 0,
+      duration: 0.6,
+      ease: 'expo.out',
+      onComplete: () => {
+        this.formBodyName.classList.add('hidden');
+        this.bodyIn.kill();
+        window.location.assign('/');
+      }
+    })
   }
 
   toEmail() {

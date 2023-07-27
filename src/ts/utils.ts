@@ -1,5 +1,5 @@
-const webfont = require('webfontloader');
-const imagesLoaded = require('imagesloaded');
+import webfont from 'webfontloader';
+import imagesLoaded from 'imagesloaded';
 
 const preloadFonts = () => {
   return new Promise((resolve) => {
@@ -7,7 +7,6 @@ const preloadFonts = () => {
       custom: {
           families: ['SFUIDisplay']
         },
-      active: resolve
     });
   });
 }

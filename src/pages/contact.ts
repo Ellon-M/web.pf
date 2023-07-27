@@ -1,5 +1,44 @@
 const contact = `
 <div class="form-screen">
+<button class="form-close-btn">
+  <div class="form-close-btn-inner">
+    <div class="form-close-inner-item"> /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+    <div class="form-close-inner-item">&nbsp; /close</div>
+  </div>
+</button>
 <div class="form-container-top">
   <button class="form-back-btn">  
     <svg width="108" height="23"><path stroke="#fff" fill="none" d="M107.5 11.5H1.5m0 0c8.975-.536 15.087-1.364 18.336-2.484C23.086 7.896 26.64 5.39 30.5 1.5m-29 10c8.975.536 15.087 1.364 18.336 2.484 3.25 1.12 6.804 3.626 10.664 7.516"></path></svg>

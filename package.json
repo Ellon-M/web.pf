@@ -20,6 +20,7 @@
     "@types/node": "^18.11.18",
     "@types/splitting": "^1.0.1",
     "@types/three": "^0.149.0",
+    "@types/webfontloader": "^1.6.35",
     "assert": "^2.0.0",
     "buffer": "^5.7.1",
     "constants-browserify": "^1.0.0",

@@ -68,6 +68,55 @@ body {
   text-transform: uppercase;
 }
 
+
+.loading-page::before,
+.loading-page::after {
+	content: '';
+	z-index: 3000;
+}
+
+.loading {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+  opacity: 0;
+
+  &-page {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    font-size: .633333vw;
+    font-family: SFUIDisplay,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-weight: 300;
+    line-height: .86em;
+  }
+}
+
+.counter {
+  @extend .loading-page;
+  padding: 1rem;
+
+  & h1 {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 486px) {
+  .loading-page {
+    font-size: 10px;
+    padding-left: 2rem;
+  }
+
+  .counter {
+    padding: 0.4rem;
+  }
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -112,4 +161,8 @@ li {
 .main {
   padding: 0;
   margin: 0;
+}
+
+.opaque {
+  opacity: 0;
 }
