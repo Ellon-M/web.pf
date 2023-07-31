@@ -2,5 +2,4 @@
 node_modules/
 **/images/
 **/fonts/
-dist
 **/styles/css/custom/
