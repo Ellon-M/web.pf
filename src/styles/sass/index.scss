@@ -106,6 +106,17 @@ body {
   }
 }
 
+@media (max-width: 960px) {
+  .loading-page {
+    font-size: 13px;
+    padding-left: 2rem;
+  }
+
+  .counter {
+    padding: 0.4rem;
+  }
+}
+
 @media (max-width: 486px) {
   .loading-page {
     font-size: 10px;

@@ -7,6 +7,8 @@ export default class Navbar {
   navbar: HTMLElement;
   navbarItems: Array<Element>;
   navbarHeight: number;
+  navBurger: HTMLElement;
+  navLinks: HTMLElement;
   tl!: gsap.core.Timeline;
 
   constructor() {
@@ -16,18 +18,41 @@ export default class Navbar {
     this.navbar = document.querySelector('.home-nav-top-container')!;
     this.navbarItems = [...document.querySelectorAll('.home-nav-top-item')!];
     this.navbarHeight = this.navbar.offsetHeight;
+    this.navLinks = document.querySelector('.home-nav-top-nav') as HTMLElement;
+    this.navBurger = document.querySelector('.home-nav-burger') as HTMLElement;
     this.initEvents();
     
     
     setInterval(() => {
       this.checkScroll();
-    }, 150);
+    }, 150);  
   }
 
   initEvents() {
     window.addEventListener('scroll', () => {
       this.didScroll = true;
+      this.navLinks.classList.remove('open');
     });
+
+    this.navBurger.addEventListener('click', (e) => {
+      this.navLinks.classList.toggle('open');
+    });
+
+    const navLinksLinks = document.querySelectorAll('.home-nav-top-item a');
+    navLinksLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.stopPropagation();
+        this.navLinks.classList.remove('open');
+      });
+    });
+    
+    window.addEventListener('click', (e: any) => {
+      const isClickedInside = this.navBurger.contains(e.target) || this.navLinks.contains(e.target);
+      
+      if (!isClickedInside) {
+        this.navLinks.classList.remove('open');
+      }
+    })
   }
 
   checkScroll() {

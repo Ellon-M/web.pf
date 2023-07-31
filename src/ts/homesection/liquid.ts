@@ -5,6 +5,7 @@ import { Magnetic } from './magnetic';
 interface DOMEl {
     mask: any;
     circle: any;
+    circleSmall: any;
     heading: any,
     footer: any,
     words: any
@@ -14,8 +15,9 @@ export class Liquid {
   DOM: DOMEl;
 
   constructor() {
-    this.DOM = { mask: undefined, circle: undefined, heading: undefined, footer: undefined, words: undefined };
+    this.DOM = { mask: undefined, circle: undefined, circleSmall: undefined, heading: undefined, footer: undefined, words: undefined };
     this.DOM.circle = document.querySelector('.footer-btn') as Element;
+    this.DOM.circleSmall = document.querySelector('.footer-btn-small') as Element;
     this.DOM.mask = document.querySelector('#request-btn');
     this.DOM.footer = document.querySelector('.footer');
     this.DOM.heading = document.querySelector('.before-footer-h2');
@@ -29,6 +31,9 @@ export class Liquid {
     this.DOM.circle.addEventListener('mouseleave', () => this.mouseLeave());
     this.DOM.circle.addEventListener('click', () => {
       this.open();
+    })
+    this.DOM.circleSmall.addEventListener('click', () => {
+      window.location.assign('/contact');
     })
   } 
 

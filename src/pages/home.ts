@@ -18,16 +18,16 @@ const home = `
       <nav class="home-nav-top-nav">
         <ul class="home-nav-top-list">
           <li class="home-nav-top-item">
-            <a href="/" aria-current="page" class="">Projects</a>
+            <a href="#projects" aria-current="page" class="">Projects</a>
           </li>
           <li class="home-nav-top-item">
-            <a href="/" aria-current="page" class="">Skills</a>
+            <a href="#skills" aria-current="page" class="">Skills</a>
           </li>
           <li class="home-nav-top-item">
-            <a href="/" aria-current="page" class="">About</a>
+            <a href="#about" aria-current="page" class="">About</a>
           </li>
           <li class="home-nav-top-item">
-            <a href ="/" aria-current="page" class="">Contact</a>
+            <a href ="#contacts" aria-current="page" class="">Contact</a>
           </li>
         </ul>
       </nav>
@@ -78,10 +78,11 @@ const home = `
          <div class="home-nav-container">
            <nav class="home-nav opaque">
                <ul class="home-nav-top">
-                 <li><a href="">Home</a></li>
-                 <li><a href="">About</a></li>
-                 <li><a href="">Projects</a></li>
-                 <li><a href="">Contacts</a></li> 
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#projects">Projects</a></li>
+                 <li><a href="#skills">Skills</a></li>
+                 <li><a href="#contacts">Contacts</a></li> 
                </ul>
            </nav>
          </div>
@@ -326,6 +327,7 @@ const home = `
   </div>
   <div id="skills" class="section-skills">
     <div class="skills-title">
+      <div class="skills-title-text">My skills</div>
       <div class="skills-marquee">
         <div class="skills-item">&nbsp; — My skills</div>
         <div class="skills-item">&nbsp; — My skills</div>
@@ -530,6 +532,13 @@ const home = `
               </div>
             </div>
           </div>
+          <button class="footer-btn-small">
+            <span class="footer-btn-text"><span>Send a request</span></span>
+            <span class="footer-btn-sticky">
+              <span class="footer-btn-bg"></span>
+              <span class="footer-btn-border"></span>
+            </span>
+          </button>
           <button class="button footer-btn">
             <span class="footer-btn-text"><span>Send a request</span></span>
             <span class="footer-btn-sticky">
@@ -542,6 +551,7 @@ const home = `
             </svg>
             <div class="footer-btn-sticky-area"></div>
           </button>
+        </div>
         </div>
         <div class="footer-info">
           <div class="footer-info-time">
