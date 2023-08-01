@@ -43,7 +43,7 @@ const planeMaterial = new THREE.ShaderMaterial({
 });
 class ScrollCanvas extends GLObject_1.GlObject {
     constructor(el) {
-        var _a, _b;
+        var _a, _b, _c;
         super(el);
         this.geometry = planeGeometry;
         this.material = planeMaterial.clone();
@@ -71,9 +71,9 @@ class ScrollCanvas extends GLObject_1.GlObject {
             uProg: { value: 0 },
         };
         this.mesh = new THREE.Mesh(this.geometry, this.material);
-        this.getDimensions();
-        this.mesh.position.set(this.offset.x, this.offset.y, 0);
-        this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
+        window.addEventListener('resize', this.handleWindowResize.bind(this));
+        (_c = window.visualViewport) === null || _c === void 0 ? void 0 : _c.addEventListener('resize', this.handleWindowResize.bind(this));
+        this.handleWindowResize();
         // this.updateX(this.offset.x);
         // this.updateY(this.offset.y);
         // this.updateSize(this.sizes.x, this.sizes.y);
@@ -81,6 +81,13 @@ class ScrollCanvas extends GLObject_1.GlObject {
         index_1.default.scene.add(this);
         this.initEvents();
         events_1.Events.on('scroll', this.render.bind(this));
+    }
+    handleWindowResize() {
+        const viewportWidth = window.visualViewport.width;
+        const viewportHeight = window.visualViewport.height;
+        this.sizes.set(viewportWidth, viewportHeight);
+        this.mesh.position.set(this.offset.x, this.offset.y, 0);
+        this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
     }
     updateTime(time) {
         this.material.uniforms.uTime.value = time;

@@ -70,9 +70,10 @@ export class ScrollCanvas extends GlObject {
     }
 
     this.mesh = new THREE.Mesh(this.geometry, this.material);
-    this.getDimensions();
-    this.mesh.position.set(this.offset.x, this.offset.y, 0);
-    this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
+    window.addEventListener('resize', this.handleWindowResize.bind(this));
+    window.visualViewport?.addEventListener('resize', this.handleWindowResize.bind(this));
+
+    this.handleWindowResize();
     // this.updateX(this.offset.x);
     // this.updateY(this.offset.y);
     // this.updateSize(this.sizes.x, this.sizes.y);
@@ -81,6 +82,16 @@ export class ScrollCanvas extends GlObject {
     this.initEvents();
   
     Events.on('scroll', this.render.bind(this));
+  }
+
+  handleWindowResize() {
+    const viewportWidth = window.visualViewport!.width;
+    const viewportHeight = window.visualViewport!.height;
+
+    this.sizes.set(viewportWidth, viewportHeight);
+    
+    this.mesh.position.set(this.offset.x, this.offset.y, 0);
+    this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
   }
 
   updateTime(time: number) {
