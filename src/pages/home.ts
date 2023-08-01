@@ -577,3 +577,5 @@ const home = `
 </div>
 </div>
 `;
+
+export {};

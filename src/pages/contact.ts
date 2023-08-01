@@ -100,3 +100,5 @@ const contact = `
 </div>
 </div>
 `;
+
+export {};

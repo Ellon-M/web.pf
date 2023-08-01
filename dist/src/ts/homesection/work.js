@@ -28,29 +28,38 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ScrollCanvas = void 0;
 const THREE = __importStar(require("three"));
-const utils_1 = require("../utils");
 const fragment_glsl_1 = __importDefault(require("./shaders/fragment.glsl"));
 const vertex_glsl_1 = __importDefault(require("./shaders/vertex.glsl"));
 const GLObject_1 = require("../gl/GLObject");
 const index_1 = __importDefault(require("../gl/index"));
 const gsap_1 = __importDefault(require("gsap"));
-const glslify_1 = __importDefault(require("glslify"));
+const events_1 = require("../events");
 const planeGeometry = new THREE.PlaneGeometry(1, 1, 100, 100);
 const planeMaterial = new THREE.ShaderMaterial({
-    vertexShader: (0, glslify_1.default)(vertex_glsl_1.default),
-    fragmentShader: (0, glslify_1.default)(fragment_glsl_1.default),
+    vertexShader: vertex_glsl_1.default,
+    fragmentShader: fragment_glsl_1.default,
     transparent: true,
     side: THREE.DoubleSide
 });
 class ScrollCanvas extends GLObject_1.GlObject {
     constructor(el) {
-        var _a;
+        var _a, _b;
         super(el);
         this.geometry = planeGeometry;
         this.material = planeMaterial.clone();
+        this.img = (_a = this.el) === null || _a === void 0 ? void 0 : _a.querySelector('[data-src]');
+        this.scrollable = document.querySelector('[data-scroll-content]');
+        const imgAttr = (_b = this.img) === null || _b === void 0 ? void 0 : _b.getAttribute('data-src');
+        this.offset = new THREE.Vector2(0, 0);
+        this.sizes = new THREE.Vector2(0, 0);
+        this.texture = new THREE.TextureLoader().load(imgAttr, (texture) => {
+            texture.minFilter = THREE.LinearFilter;
+            texture.generateMipmaps = false;
+            this.material.uniforms.uTexture.value = texture;
+        });
         this.material.uniforms = {
             uTexture: {
-                value: 0
+                value: this.texture
             },
             uOffset: {
                 value: new THREE.Vector2(0.0, 0.0)
@@ -61,54 +70,58 @@ class ScrollCanvas extends GLObject_1.GlObject {
             uTime: { value: 0 },
             uProg: { value: 0 },
         };
-        this.img = (_a = this.el) === null || _a === void 0 ? void 0 : _a.querySelector('.gl-img');
-        this.texture = new THREE.TextureLoader().load(this.img.src, (texture) => {
-            texture.minFilter = THREE.LinearFilter;
-            texture.generateMipmaps = false;
-            this.material.uniforms.uTexture.value = texture;
-        });
-        this.offset = new THREE.Vector2(0, 0);
-        this.sizes = new THREE.Vector2(0, 0);
         this.mesh = new THREE.Mesh(this.geometry, this.material);
+        this.getDimensions();
         this.mesh.position.set(this.offset.x, this.offset.y, 0);
         this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
+        // this.updateX(this.offset.x);
+        // this.updateY(this.offset.y);
+        // this.updateSize(this.sizes.x, this.sizes.y);
         this.add(this.mesh);
-        this.scene = index_1.default.scene;
-        this.scene.add(this);
+        index_1.default.scene.add(this);
         this.initEvents();
-        this.render();
-    }
-    getDimensions() {
-        const { width, height, top, left } = this.img.getBoundingClientRect();
-        this.sizes.set(width, height);
-        this.offset.set(left - window.innerWidth / 2 + width / 2, -top + window.innerHeight / 2 - height / 2);
+        events_1.Events.on('scroll', this.render.bind(this));
     }
     updateTime(time) {
         this.material.uniforms.uTime.value = time;
     }
+    getDimensions() {
+        var _a, _b;
+        const { width, height, top, left } = (_a = this.scrollable) === null || _a === void 0 ? void 0 : _a.getBoundingClientRect();
+        (_b = this.sizes) === null || _b === void 0 ? void 0 : _b.set(width, height);
+        // console.log('sizes:', width, height);
+        this.offset.set(left - window.innerWidth / 2 + width / 2, -top + window.innerHeight / 2 - height / 2);
+    }
     render() {
         this.getDimensions();
-        let target = window.scrollY;
-        let current = (0, utils_1.lerp)(0, target, 0.065);
-        this.material.uniforms.uOffset.value.set(this.offset.x * 0.0, -(target - current) * -0.000085);
-        requestAnimationFrame(this.render.bind(this));
+        events_1.Events.on('tick', (data) => {
+            var _a;
+            const target = data.target;
+            const current = data.current;
+            (_a = this.material) === null || _a === void 0 ? void 0 : _a.uniforms.uOffset.value.set(this.offset.x * 0.0, -(target - current) * 0.0003);
+            // console.log(this.material?.uniforms.uOffset.value);
+        });
     }
     initEvents() {
+        // Events.on('scroll', this.render.bind(this));
         this.mouseEnter();
         this.mouseLeave();
     }
     mouseEnter() {
-        this.img.addEventListener('mouseenter', () => {
-            gsap_1.default.to(this.material.uniforms.uProg, {
+        var _a;
+        (_a = this.el) === null || _a === void 0 ? void 0 : _a.addEventListener('mouseenter', () => {
+            var _a;
+            gsap_1.default.to((_a = this.material) === null || _a === void 0 ? void 0 : _a.uniforms.uProg, {
                 value: 1,
                 ease: 'power.inOut',
             });
         });
     }
     mouseLeave() {
-        this.img.addEventListener('mouseleave', () => {
-            // console.log(this.element);
-            gsap_1.default.to(this.material.uniforms.uProg, {
+        var _a;
+        (_a = this.el) === null || _a === void 0 ? void 0 : _a.addEventListener('mouseleave', () => {
+            var _a;
+            gsap_1.default.to((_a = this.material) === null || _a === void 0 ? void 0 : _a.uniforms.uProg, {
                 value: 0,
                 ease: 'power.inOut',
             });

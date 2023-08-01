@@ -1,10 +1,7 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const imagesloaded_1 = __importDefault(require("imagesloaded"));
-const events_1 = __importDefault(require("../events"));
+const events_1 = require("../events");
+const utils_1 = require("../utils");
 class Smooth {
     constructor() {
         this.bindMethods();
@@ -19,7 +16,8 @@ class Smooth {
             .forEach((fn) => this[fn] = this[fn].bind(this));
     }
     setStyles() {
-        Object.assign(this.dom.el.style, {
+        var _a;
+        Object.assign((_a = this.dom.el) === null || _a === void 0 ? void 0 : _a.style, {
             position: 'fixed',
             top: 0,
             left: 0,
@@ -33,10 +31,6 @@ class Smooth {
     }
     resize() {
         this.setHeight();
-        this.scroll();
-    }
-    preload() {
-        (0, imagesloaded_1.default)(this.dom.content, (instance) => this.setHeight());
     }
     scroll() {
         this.data.current = window.scrollY;
@@ -46,16 +40,17 @@ class Smooth {
         const acc = diff / window.innerWidth;
         const velo = +acc;
         this.dom.content.style.transform = `translate3d(0, -${current}px, 0)`;
+        // console.log('test');
     }
     on() {
         this.setStyles();
         this.setHeight();
-        events_1.default.on('tick', this.run);
-        events_1.default.on('resize', this.resize);
+        events_1.Events.on('tick', this.run);
+        events_1.Events.on('resize', this.resize);
     }
     off() {
-        events_1.default.off('tick', this.run);
-        events_1.default.off('resize', this.resize);
+        events_1.Events.off('tick', this.run);
+        events_1.Events.off('resize', this.resize);
     }
     destroy() {
         document.body.style.height = '';
@@ -67,7 +62,6 @@ class Smooth {
         this.setHeight();
     }
     init() {
-        this.preload();
         this.on();
     }
 }

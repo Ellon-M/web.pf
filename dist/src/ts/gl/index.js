@@ -29,10 +29,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const gsap_1 = __importDefault(require("gsap"));
 const THREE = __importStar(require("three"));
 const events_1 = require("../events");
-const utils_1 = require("../utils");
-let current = 0;
-let target = 0;
-let ease = 0.055;
 exports.default = new class {
     constructor() {
         this.run = ({ current }) => {
@@ -42,8 +38,7 @@ exports.default = new class {
                 plane.updatePosition(current);
                 plane.updateTime(elapsed);
             }
-            console.log('run');
-            this.render();
+            requestAnimationFrame(() => this.render());
         };
         this.resize = () => {
             this.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -54,8 +49,14 @@ exports.default = new class {
             }
         };
         this.scene = new THREE.Scene();
+        // let perspective = 1000;
+        // const fov = (180 * (2 * Math.atan(window.innerHeight / 2 / perspective))) / Math.PI;
         this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+        this.container = document.querySelector('[data-scroll-content]');
+        this.scrollable = document.querySelector('[data-scroll]');
         this.camera.position.z = 50;
+        // this.camera.position.set(0, 0, perspective);
+        document.body.style.height = `${this.scrollable.getBoundingClientRect().height}px`;
         this.renderer = new THREE.WebGLRenderer({
             alpha: true,
         });
@@ -63,20 +64,13 @@ exports.default = new class {
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.renderer.setClearColor(0xF2F2F2, 0);
         this.clock = new THREE.Clock();
-        this.scrollable = document.querySelector('.home');
         this.init();
     }
     init() {
         this.addToDom();
         this.addEvents();
     }
-    smoothScroll() {
-        target = window.scrollY;
-        current = (0, utils_1.lerp)(current, target, ease);
-        this.scrollable.style.transform = `translate3d(0,${-current}px, 0)`;
-    }
     render() {
-        // this.smoothScroll();
         this.renderer.render(this.scene, this.camera);
     }
     addEvents() {

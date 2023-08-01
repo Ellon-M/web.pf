@@ -1,22 +1,24 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.wrapElements = exports.map = exports.getRandomFloat = exports.distance = exports.getMousePos = exports.getViewport = exports.calcWinsize = exports.lineEquation = exports.dist = exports.lerp = exports.sin = exports.cos = exports.HALF_PI = exports.angle = exports.fadeInOut = exports.fadeOut = exports.fadeIn = exports.randRange = exports.randIn = exports.rand = exports.floor = exports.preloadImages = exports.preloadFonts = void 0;
-const webfont = require('webfontloader');
-const imagesLoaded = require('imagesloaded');
+const webfontloader_1 = __importDefault(require("webfontloader"));
+const imagesloaded_1 = __importDefault(require("imagesloaded"));
 const preloadFonts = () => {
     return new Promise((resolve) => {
-        webfont.load({
+        webfontloader_1.default.load({
             custom: {
                 families: ['SFUIDisplay']
             },
-            active: resolve
         });
     });
 };
 exports.preloadFonts = preloadFonts;
 const preloadImages = (selector) => {
     return new Promise((resolve) => {
-        imagesLoaded(document.querySelectorAll(selector), { background: true }, resolve);
+        (0, imagesloaded_1.default)(document.querySelectorAll(selector), { background: true }, resolve);
     });
 };
 exports.preloadImages = preloadImages;

@@ -58,10 +58,8 @@ class GlObject extends THREE.Object3D {
         const width = height * index_1.default.camera.aspect;
         return { width, height };
     }
-    updateSize() {
+    updateSize(x = this.bounds.width / window.innerWidth, y = this.bounds.height / window.innerHeight) {
         this.camUnit = this.calculateUnitSize(index_1.default.camera.position.z - this.position.z);
-        const x = this.bounds.width / window.innerWidth;
-        const y = this.bounds.height / window.innerHeight;
         if (!x || !y)
             return;
         this.scale.x = this.camUnit.width * x;

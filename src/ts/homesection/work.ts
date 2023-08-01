@@ -71,8 +71,8 @@ export class ScrollCanvas extends GlObject {
 
     this.mesh = new THREE.Mesh(this.geometry, this.material);
     this.getDimensions();
-    // this.mesh.position.set(this.offset.x, this.offset.y, 0);
-    // this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
+    this.mesh.position.set(this.offset.x, this.offset.y, 0);
+    this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
     // this.updateX(this.offset.x);
     // this.updateY(this.offset.y);
     // this.updateSize(this.sizes.x, this.sizes.y);

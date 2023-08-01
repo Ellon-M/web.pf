@@ -11,7 +11,7 @@ class Raf {
         this.target = 0;
         this.current = 0;
         this.currentRounded = 0;
-        this.ease = 0.115;
+        this.ease = 0.095;
         this.init();
     }
     tick() {

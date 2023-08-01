@@ -1,9 +1,8 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const routes = {
     '/': home,
     '/about': about,
-    '/work': work
+    '/contact': contact
 };
 const root = document.querySelector('#root');
 const path = window.location.pathname;
