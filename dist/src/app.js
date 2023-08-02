@@ -1,16 +1,19 @@
 "use strict";
 const routes = {
     '/': home,
-    '/contact': contact
+    '/contact': contact,
 };
 const root = document.querySelector('#root');
-const path = window.location.pathname;
+const pathname = window.location.pathname;
+const path = pathname === '/' ? pathname : pathname.replace(/\/$/, ''); // Normalize the path by removing trailing slashes.
 root.innerHTML = routes[path];
 const onNavigate = (pathname) => {
-    window.history.pushState({}, pathname, window.location.origin + pathname);
-    root.innerHTML = routes[pathname];
+    const normalizedPath = pathname === '/' ? pathname : pathname.replace(/\/$/, ''); // Normalize the path by removing trailing slashes.
+    window.history.pushState({}, pathname, window.location.origin + normalizedPath);
+    root.innerHTML = routes[normalizedPath];
 };
 window.onpopstate = () => {
-    root.innerHTML = routes[window.location.pathname];
+    const normalizedPath = window.location.pathname === '/' ? '/' : window.location.pathname.replace(/\/$/, ''); // Normalize the path by removing trailing slashes.
+    root.innerHTML = routes[normalizedPath];
 };
 //# sourceMappingURL=app.js.map
