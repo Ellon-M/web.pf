@@ -71,16 +71,17 @@ export class ScrollCanvas extends GlObject {
 
     this.mesh = new THREE.Mesh(this.geometry, this.material);
     let previousViewportHeight = window.visualViewport!.height;
-    // window.addEventListener('resize', this.handleWindowResize.bind(this));
-    // window.visualViewport?.addEventListener('resize', this.handleWindowResize.bind(this));
-    // this.updateX(this.offset.x);
-    // this.updateY(this.offset.y);
-    // this.updateSize(this.sizes.x, this.sizes.y);
     this.add(this.mesh);
     Gl.scene.add(this);
     this.initEvents();
   
     Events.on('scroll', this.render.bind(this));
+
+    const mobImgs = document.querySelectorAll('.mob-img');
+    mobImgs.forEach(element => {
+      const backgroundImageUrl = element.getAttribute('data-src');
+      element.style.backgroundImage = `url(${backgroundImageUrl})`;
+    });
   }
 
   updateTime(time: number) {

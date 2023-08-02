@@ -499,11 +499,11 @@ img {
 
 @media (max-width: 486px) {
   .work-title {
-    margin-bottom: 90px;
+    margin-bottom: 40px;
   }
 
   .work-bottom {
-    margin-top: 90px;
+    margin-top: 40px;
   }
 }
 
@@ -545,6 +545,22 @@ img {
   background-size: cover;
 }
 
+.js-plane {
+  display: block;
+}
+
+.no-plane {
+  display: none;
+}
+
+.mob-img {
+  max-width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
 .dom-gl {
   position: fixed;
   z-index: -10;
@@ -552,6 +568,21 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  display: block;
+}
+
+@media (max-width: 960px) {
+  .no-plane {
+    display: block;
+  }
+
+  .js-plane {
+    display: none;
+  }
+
+  .dom-gl {
+    display: none !important;
+  }
 }
 
 .hl {

@@ -168,6 +168,9 @@ const home = `
           <div class="aspect" style="--aspect: 151.75%"></div>
           <div class="gl-img" data-src="https://images.pexels.com/photos/15045104/pexels-photo-15045104/free-photo-of-portrait-of-woman-in-suit-with-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
         </figure>
+        <figure class="work-image no-plane">
+          <div class="mob-img" data-src="https://images.pexels.com/photos/15045104/pexels-photo-15045104/free-photo-of-portrait-of-woman-in-suit-with-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+        </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
@@ -185,6 +188,9 @@ const home = `
           <figure class="work-image js-plane">
             <div class="aspect" style="--aspect: 92.25%"></div>
             <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1644608316/ds/leonie-zettl-ttjpvMhSIVs-unsplash_jnlxze.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1644608316/ds/leonie-zettl-ttjpvMhSIVs-unsplash_jnlxze.jpg"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
@@ -204,6 +210,9 @@ const home = `
             <div class="aspect" style="--aspect: 140.25%"></div>
             <div class="gl-img" data-src="https://images.pexels.com/photos/8445646/pexels-photo-8445646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
           </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://images.pexels.com/photos/8445646/pexels-photo-8445646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
@@ -222,6 +231,9 @@ const home = `
             <div class="aspect" style="--aspect: 95.25%"></div>
             <div class="gl-img" data-src="https://images.pexels.com/photos/6758034/pexels-photo-6758034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
           </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://images.pexels.com/photos/6758034/pexels-photo-6758034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
@@ -238,7 +250,10 @@ const home = `
         <div class="work-title">Actuator</div>
           <figure class="work-image js-plane">
             <div class="aspect" style="--aspect: 131.5%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/16577589/pexels-photo-16577589/free-photo-of-portrait-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="gl-img" data-src="https://images.pexels.com/photos/16577589/pexels-photo-16577589/free-photo-of-portrait-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>  
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://images.pexels.com/photos/16577589/pexels-photo-16577589/free-photo-of-portrait-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>  
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
@@ -258,6 +273,9 @@ const home = `
             <div class="aspect" style="--aspect: 71%"></div>
             <div class="gl-img" data-src="https://images.pexels.com/photos/10652719/pexels-photo-10652719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
           </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://images.pexels.com/photos/10652719/pexels-photo-10652719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
@@ -275,6 +293,9 @@ const home = `
           <figure class="work-image js-plane">
             <div class="aspect" style="--aspect: 90.75%"></div>
             <div class="gl-img" data-src="https://images.pexels.com/photos/11608681/pexels-photo-11608681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://images.pexels.com/photos/11608681/pexels-photo-11608681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
@@ -294,6 +315,9 @@ const home = `
             <div class="aspect" style="--aspect: 148.5%"></div>
             <div class="gl-img" data-src="https://images.pexels.com/photos/8796246/pexels-photo-8796246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
           </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://images.pexels.com/photos/8796246/pexels-photo-8796246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
@@ -311,6 +335,9 @@ const home = `
           <figure class="work-image js-plane">
             <div class="aspect" style="--aspect: 141.25%"></div>
             <div class="gl-img" data-src="https://images.pexels.com/photos/16567147/pexels-photo-16567147/free-photo-of-city-fashion-people-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://images.pexels.com/photos/16567147/pexels-photo-16567147/free-photo-of-city-fashion-people-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
