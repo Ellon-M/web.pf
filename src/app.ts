@@ -5,7 +5,6 @@ type RouteType = {
 
 const routes: RouteType = {
     '/': home,
-    '/about': about,
     '/contact': contact
 }
 

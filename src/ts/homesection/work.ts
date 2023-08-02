@@ -70,10 +70,9 @@ export class ScrollCanvas extends GlObject {
     }
 
     this.mesh = new THREE.Mesh(this.geometry, this.material);
-    window.addEventListener('resize', this.handleWindowResize.bind(this));
-    window.visualViewport?.addEventListener('resize', this.handleWindowResize.bind(this));
-
-    this.handleWindowResize();
+    let previousViewportHeight = window.visualViewport!.height;
+    // window.addEventListener('resize', this.handleWindowResize.bind(this));
+    // window.visualViewport?.addEventListener('resize', this.handleWindowResize.bind(this));
     // this.updateX(this.offset.x);
     // this.updateY(this.offset.y);
     // this.updateSize(this.sizes.x, this.sizes.y);
@@ -84,16 +83,6 @@ export class ScrollCanvas extends GlObject {
     Events.on('scroll', this.render.bind(this));
   }
 
-  handleWindowResize() {
-    const viewportWidth = window.visualViewport!.width;
-    const viewportHeight = window.visualViewport!.height;
-
-    this.sizes.set(viewportWidth, viewportHeight);
-    
-    this.mesh.position.set(this.offset.x, this.offset.y, 0);
-    this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
-  }
-
   updateTime(time: number) {
     this.material.uniforms.uTime.value = time;
   }
@@ -101,9 +90,10 @@ export class ScrollCanvas extends GlObject {
   getDimensions() {
     const {width, height, top, left} = this.scrollable?.getBoundingClientRect() as MeshRect;
     this.sizes?.set(width, height);
-    // console.log('sizes:', width, height);
+    const viewportWidth = window.visualViewport?.width;
+    const viewportHeight = window.visualViewport!.height;
     
-    this.offset.set(left - window.innerWidth / 2 + width / 2, -top + window.innerHeight / 2 - height / 2);
+    this.offset.set(left - window.innerWidth / 2 + width / 2, -top + viewportHeight / 2 - height / 2);
 
   }
 
@@ -119,7 +109,7 @@ export class ScrollCanvas extends GlObject {
   }
 
   initEvents() {
-    // Events.on('scroll', this.render.bind(this));
+    Events.on('scroll', this.render.bind(this));
     this.mouseEnter();
     this.mouseLeave();
   }

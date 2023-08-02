@@ -497,6 +497,16 @@ img {
   }
 }
 
+@media (max-width: 486px) {
+  .work-title {
+    margin-bottom: 90px;
+  }
+
+  .work-bottom {
+    margin-top: 90px;
+  }
+}
+
 .s-arrow {
   .s-arrow {
     width: 14px;
