@@ -91,7 +91,7 @@ const home = `
       </div>
       <div class="home-bottom">
         <div class="home-bottom-left opaque">
-          Deeps or Skies make for Her a crown in which is every kind of life: all modes of Triple-powered life, of Uncontainable life, of Infinite life.
+          I thrive on creativity in problem solving, as well as discovery of new ideas and solutions.
         </div>
         <div class="home-bottom-right splitted">
           <span class="word">
