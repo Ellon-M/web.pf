@@ -289,7 +289,7 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work" data-src="ellon-m.github.io/studio-tour/">
+      <div class="work" data-src="https://github.com/Ellon-M/studio-tour/">
         <div class="work-date">10 / 22</div>
         <div class="work-title">Studio Tour</div>
           <figure class="work-image js-plane">
