@@ -77,9 +77,16 @@ class ScrollCanvas extends GLObject_1.GlObject {
         this.initEvents();
         events_1.Events.on('scroll', this.render.bind(this));
         const mobImgs = document.querySelectorAll('.mob-img');
+        const projects = document.querySelectorAll('.work');
         mobImgs.forEach(element => {
             const backgroundImageUrl = element.getAttribute('data-src');
             element.style.backgroundImage = `url(${backgroundImageUrl})`;
+        });
+        projects.forEach(project => {
+            const projectLink = project.getAttribute('data-src');
+            project.addEventListener('click', () => {
+                window.location.href = projectLink;
+            });
         });
     }
     updateTime(time) {

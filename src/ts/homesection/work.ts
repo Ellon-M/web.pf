@@ -78,10 +78,19 @@ export class ScrollCanvas extends GlObject {
     Events.on('scroll', this.render.bind(this));
 
     const mobImgs = document.querySelectorAll('.mob-img');
+    const projects = document.querySelectorAll('.work');
+
     mobImgs.forEach(element => {
       const backgroundImageUrl = element.getAttribute('data-src');
       element.style.backgroundImage = `url(${backgroundImageUrl})`;
     });
+
+    projects.forEach(project => {
+      const projectLink = project.getAttribute('data-src') as string;
+      project.addEventListener('click', () => {
+        window.location.href = projectLink;
+      })
+    })
   }
 
   updateTime(time: number) {

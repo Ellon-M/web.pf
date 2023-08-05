@@ -161,20 +161,20 @@ const home = `
     </h2>
     <div class="projects-description"></div>
     <div class="content">
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Cybark</div>
+      <div class="work" data-src="https://github.com/Lancelot-SO/carbnb-frontend">
+        <div class="work-date">06 / 23</div>
+        <div class="work-title">CarBnB</div>
         <figure class="work-image js-plane">
           <div class="aspect" style="--aspect: 151.75%"></div>
-          <div class="gl-img" data-src="https://images.pexels.com/photos/15045104/pexels-photo-15045104/free-photo-of-portrait-of-woman-in-suit-with-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/flavien-7z0vOADmu7c-unsplash_tukidx.jpg"></div>
         </figure>
         <figure class="work-image no-plane">
-          <div class="mob-img" data-src="https://images.pexels.com/photos/15045104/pexels-photo-15045104/free-photo-of-portrait-of-woman-in-suit-with-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+          <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/flavien-7z0vOADmu7c-unsplash_tukidx.jpg"></div>
         </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">The cost of sanity, in this society, is a certain level of alienation.</div>
+            <div class="work-bottom-text">Like AirBnB, but for cars. Users can rent and reserve cars for specific dates.</div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -182,20 +182,20 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Bad Dream </div>
+      <div class="work" data-src="https://spmetrics.netlify.app/">
+        <div class="work-date">03 / 23</div>
+        <div class="work-title">Spotify Metrics</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 92.25%"></div>
-            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1644608316/ds/leonie-zettl-ttjpvMhSIVs-unsplash_jnlxze.jpg"></div>
+            <div class="aspect" style="--aspect: 109.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/david-svihovec-xMH2vteiEY4-unsplash_g9oz9i.jpg"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1644608316/ds/leonie-zettl-ttjpvMhSIVs-unsplash_jnlxze.jpg"></div>
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/david-svihovec-xMH2vteiEY4-unsplash_g9oz9i.jpg"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">It is because of Thee that we ray forth glory, and it is by Thee that we behold the Father of the Universe</div>
+            <div class="work-bottom-text">displays featured Spotify playlists based on the Spotify algorithm selection; shows details of the most popular tracks in each playlist.</div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -203,20 +203,20 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Vaporous</div>
+      <div class="work" data-src="https://github.com/Ellon-M/space-exploration">
+        <div class="work-date">11 / 22</div>
+        <div class="work-title">Space Exploration</div>
           <figure class="work-image js-plane">
             <div class="aspect" style="--aspect: 140.25%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/8445646/pexels-photo-8445646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222261/spacex-9dF7pCyaM9s-unsplash_cfshxa.jpg"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.pexels.com/photos/8445646/pexels-photo-8445646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222261/spacex-9dF7pCyaM9s-unsplash_cfshxa.jpg"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">O Fount of the Universality of aeons, I praise Thee.</div>
+            <div class="work-bottom-text">A web application for a company that provides commercial and scientific space travel services. Allows users to book rockets and join selected space missions.</div>
             <div class="work-bottom-icon">
             <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -224,20 +224,20 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Operator</div>
+      <div class="work" data-src="https://github.com/Ellon-M/OlympicsDash">
+        <div class="work-date">04 / 22</div>
+        <div class="work-title">Olympics Dash</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 95.25%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/6758034/pexels-photo-6758034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="aspect" style="--aspect: 75.25%"></div>
+            <div class="gl-img" data-src="https://images.unsplash.com/photo-1595663823598-931cd6b854fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.pexels.com/photos/6758034/pexels-photo-6758034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="mob-img" data-src="https://images.unsplash.com/photo-1595663823598-931cd6b854fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">The First Paternity is a face of the Infinite One, and thirty infinite powers surround him. </div>
+            <div class="work-bottom-text">Plotly-Dash interface of previously held summer and winter olympic games dating back to the 1920s.</div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -245,20 +245,20 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Actuator</div>
+      <div class="work" data-src="https://casavenida.com/">
+        <div class="work-date">01 / 22</div>
+        <div class="work-title">Casavenida</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 131.5%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/16577589/pexels-photo-16577589/free-photo-of-portrait-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>  
+            <div class="aspect" style="--aspect: 86.5%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222264/jessica-furtney-YOoucEImrKw-unsplash_uhnmja.jpg"></div>  
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.pexels.com/photos/16577589/pexels-photo-16577589/free-photo-of-portrait-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>  
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222264/jessica-furtney-YOoucEImrKw-unsplash_uhnmja.jpg"></div>  
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">In each of these Enneads there is a Monad, and in each Monad a Space called "Incorruptible".</div>
+            <div class="work-bottom-text">Real Estate Search Engine that links buyers with verified direct sellers of Real Estate.</div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -266,20 +266,20 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Random</div>
+      <div class="work" data-src="https://car-dealer-40c1f.web.app/">
+        <div class="work-date">10 / 21</div>
+        <div class="work-title">Car Dealers </div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 71%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/10652719/pexels-photo-10652719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="aspect" style="--aspect: 94.5%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222260/mos-sukjaroenkraisri-njHhuZCuRjo-unsplash_gyhls0.jpg"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.pexels.com/photos/10652719/pexels-photo-10652719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222260/mos-sukjaroenkraisri-njHhuZCuRjo-unsplash_gyhls0.jpg"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">O Alone-begotten, Light and Life and Grace. </div>
+            <div class="work-bottom-text">Design-oriented automobile display application that features cars for sale.</div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -287,62 +287,20 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Uplinking</div>
+      <div class="work" data-src="ellon-m.github.io/studio-tour/">
+        <div class="work-date">10 / 22</div>
+        <div class="work-title">Studio Tour</div>
           <figure class="work-image js-plane">
             <div class="aspect" style="--aspect: 90.75%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/11608681/pexels-photo-11608681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222245/aditya-vyas-wmXVABZ7JBk-unsplash_kbd1m9.jpg"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.pexels.com/photos/11608681/pexels-photo-11608681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222245/aditya-vyas-wmXVABZ7JBk-unsplash_kbd1m9.jpg"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">Ten Decads encircle her neck, nine Enneads are about her heart and seven hebdomads are under her feet. </div>
-            <div class="work-bottom-icon">
-              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
-            </div>
-          </div>
-          <div class="hl"></div>
-        </div>
-      </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Half time</div>
-          <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 148.5%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/8796246/pexels-photo-8796246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
-          </figure>
-          <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.pexels.com/photos/8796246/pexels-photo-8796246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
-          </figure>
-        <div class="work-bottom">
-          <div class="hl"></div>
-          <div class="work-bottom-content">
-            <div class="work-bottom-text">The Father exists exalted above all the perfect.</div>
-            <div class="work-bottom-icon">
-              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
-            </div>
-          </div>
-          <div class="hl"></div>
-        </div>
-      </div>
-      <div class="work">
-        <div class="work-date">03 / 05</div>
-        <div class="work-title">Child birth</div>
-          <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 141.25%"></div>
-            <div class="gl-img" data-src="https://images.pexels.com/photos/16567147/pexels-photo-16567147/free-photo-of-city-fashion-people-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
-          </figure>
-          <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.pexels.com/photos/16567147/pexels-photo-16567147/free-photo-of-city-fashion-people-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
-          </figure>
-        <div class="work-bottom">
-          <div class="hl"></div>
-          <div class="work-bottom-content">
-            <div class="work-bottom-text">There are glories too exalted for descriptions moved by thought.</div>
+            <div class="work-bottom-text">A web page for a popular film intended to exhibit and display information about a tour of the studio where the film was produced. </div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -366,78 +324,58 @@ const home = `
     </div>
     <div class="skills">
       <div class="skill">
-        <div class="skill-name">OLALLA</div>
-        <div class="skill-desc">YOU COULD BE MY UNINTENDED CHOICE TO LIVE MY LIFE EXTENDED YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
+        <div class="skill-name">HTML/CSS</div>
+        <div class="skill-desc">Basic markup technologies that bring my designs and apps to the browser</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">EL BÚHO</div>
-        <div class="skill-desc">YOU COULD BE THE ONE WHO LISTENS TO MY DEEPEST INQUISITIONS YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
+        <div class="skill-name">JS/TS</div>
+        <div class="skill-desc">(JavaScript/TypeScript) for frontend implementation and broswer logic</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">NOCTURN</div>
-        <div class="skill-desc">I'LL BE THERE AS SOON AS I CAN BUT I'M BUSY MENDING BROKEN PIECES OF THE LIFE I HAD BEFORE</div>
+        <div class="skill-name">React.js</div>
+        <div class="skill-desc">Favorite Frontend framework, for apps that require heavy functionality and reactivity</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">OUTSIDER</div>
-        <div class="skill-desc">FIRST THERE WAS THE ONE WHO CHALLENGED ALL MY DREAMS AND ALL MY BALANCE SHE COULD NEVER BE AS GOOD AS YOU</div>
+        <div class="skill-name">Solid.js</div>
+        <div class="skill-desc">I use it for the same purposes as React, but for better, more optimal performance in large apps that have a lot of DOM updates</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">EL AMANTE</div>
-        <div class="skill-desc">YOU COULD BE MY UNINTENDED CHOICE TO LIVE MY LIFE EXTENDED YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
+        <div class="skill-name">Next.js</div>
+        <div class="skill-desc">Always hand in hand with React - for server side rendering and static site generation</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">LA QUERIDA</div>
-        <div class="skill-desc">YOU COULD BE THE ONE WHO LISTENS TO MY DEEPEST INQUISITIONS YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
+        <div class="skill-name">GraphQL</div>
+        <div class="skill-desc">For writing API queries from an existing server-side backend implementation</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">EL HÉROE</div>
-        <div class="skill-desc">I'LL BE THERE AS SOON AS I CAN BUT I'M BUSY MENDING BROKEN PIECES OF THE LIFE I HAD BEFORE</div>
+        <div class="skill-name">Ruby on Rails</div>
+        <div class="skill-desc">Server side implemenation. Writing API's and DB models</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">EL ENCAJE</div>
-        <div class="skill-desc">FIRST THERE WAS THE ONE WHO CHALLENGED ALL MY DREAMS AND ALL MY BALANCE SHE COULD NEVER BE AS GOOD AS YOU</div>
+        <div class="skill-name">Node.js</div>
+        <div class="skill-desc">For the same reasons I use Ruby, but used mainly with serverless technologies </div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">MAGIC LEAF</div>
-        <div class="skill-desc">YOU COULD BE MY UNINTENDED CHOICE TO LIVE MY LIFE EXTENDED YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
+        <div class="skill-name">PHP/Laravel</div>
+        <div class="skill-desc">Favorite PHP framework. For server side implementations</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">BRIGHT</div>
-        <div class="skill-desc">YOU COULD BE THE ONE WHO LISTENS TO MY DEEPEST INQUISITIONS YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
+        <div class="skill-name">Docker</div>
+        <div class="skill-desc">DevOps purposes. App containerization</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">FULL HEART</div>
-        <div class="skill-desc">I'LL BE THERE AS SOON AS I CAN BUT I'M BUSY MENDING BROKEN PIECES OF THE LIFE I HAD BEFORE</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">RESTLESS</div>
-        <div class="skill-desc">FIRST THERE WAS THE ONE WHO CHALLENGED ALL MY DREAMS AND ALL MY BALANCE SHE COULD NEVER BE AS GOOD AS YOU</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">SOFT SKIN</div>
-        <div class="skill-desc">FIRST THERE WAS THE ONE WHO CHALLENGED ALL MY DREAMS AND ALL MY BALANCE SHE COULD NEVER BE AS GOOD AS YOU</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">STOUT</div>
-        <div class="skill-desc">YOU COULD BE THE ONE WHO LISTENS TO MY DEEPEST INQUISITIONS YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">HOLY</div>
-        <div class="skill-desc">YOU COULD BE MY UNINTENDED CHOICE TO LIVE MY LIFE EXTENDED YOU COULD BE THE ONE I'LL ALWAYS LOVE</div>
+        <div class="skill-name">Kubernates</div>
+        <div class="skill-desc">Hand in hand with docker - creating clusters for management and deployment of containerized apps</div>
         <div class="skill-line"></div>
       </div>
     </div>
@@ -446,9 +384,9 @@ const home = `
     <div class="about-container">
       <h2> ab<span class="ita">o</span>ut myself </h2>
       <div class="about-more-info">
-        <p>These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates </p>
-        <p>and their chaplains with the goodly echo they made; and besotted us to the gay imitation of a lordly Imprimatur</p>
-        <p>or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur</p>
+        <p> I love to engineer stimulating, interactive but user friendly experiences on the web </p>
+        <p> I BELIEVE THAT EVERY PROJECT THAT I DO SHOULD HAVE AN OVERVALUE </p>
+        <p>I always desire to achieve the most optimal solution to a problem above all else</p>
       </div>
     </div>
   </div>
@@ -473,31 +411,31 @@ const home = `
             <div class="footer-links-items">
               <div class="footer-links-item">
                 <div class="footer-num">01</div>
-                <a href="" class="footer-link">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/ellon-m/" class="footer-link">LinkedIn</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">02</div>
-                <a href="" class="footer-link">Github</a>
+                <a href="https://github.com/Ellon-M" class="footer-link">Github</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">03</div>
-                <a href="" class="footer-link">Wellfound</a>
+                <a href="https://wellfound.com/u/ellon-mordecai" class="footer-link">Wellfound</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">04</div>
-                <a href="" class="footer-link">Behance</a>
+                <a href="https://www.behance.net/ellon/" class="footer-link">Behance</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">05</div>
-                <a href="" class="footer-link">Medium</a>
+                <a href="https://ellon-m.medium.com" class="footer-link">Medium</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">06</div>
-                <a href="" class="footer-link">Instagram</a>
+                <a href="https://www.instagram.com/ocuvine/" class="footer-link">Instagram</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">07</div>
-                <a href="" class="footer-link">Twitter</a>
+                <a href="https://www.twitter.com/ellonm4/" class="footer-link">Twitter</a>
               </div>
             </div>
           </div>
@@ -520,7 +458,7 @@ const home = `
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">04</div>
-                <a href="" class="footer-link">WhatsApp</a>
+                <a href="https://wa.me/+254706528027" class="footer-link">WhatsApp</a>
               </div>
             </div>
           </div>
