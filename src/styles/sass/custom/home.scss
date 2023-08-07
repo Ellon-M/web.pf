@@ -828,7 +828,7 @@ img {
 }
 
 .about {
-  padding-top: 15.625vw;
+  padding-top: 12.625vw;
 
   &-container {
     width: 100%;
@@ -858,11 +858,29 @@ img {
     border: 0;
     vertical-align: baseline;
   }
+
+  &-res-link {
+    display: flex;
+    margin-top: 5.2083333333vw;
+    justify-content: center;
+    align-items: center;
+
+    & > a {
+      font-style: normal;
+      line-height: .86em;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
 }
 
 @media (max-width: 960px) {
   .about {
     padding-top: 24.625vw;
+
+    &-res-link {
+      margin-top: 12vh;
+    }
   }
 
   .about-more-info {

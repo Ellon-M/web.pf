@@ -388,6 +388,9 @@ const home = `
         <p> I BELIEVE THAT EVERY PROJECT THAT I DO SHOULD HAVE AN OVERVALUE </p>
         <p>I always desire to achieve the most optimal solution to a problem above all else</p>
       </div>
+      <div class="about-res-link">
+        <a href="https://ellon-m.github.io/e.res">View My Resume</a>
+      </div>
     </div>
   </div>
   <div id="contacts" class="section-contacts">
