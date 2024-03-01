@@ -83,6 +83,34 @@ const initializeSmooth = () => {
   new Smooth();
 };
 
+function showTime(){
+  var date = new Date();
+  let h: string | number = date.getHours(); // 0 - 23
+  let m: string | number = date.getMinutes(); // 0 - 59
+  let s: string | number = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("MyClock")!.innerText = time;
+  document.getElementById("MyClock")!.textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
 function handleLinkClick(event: any) {
   const link = event.currentTarget;
   const targetSection = document.querySelector(link.getAttribute('href'));
@@ -125,11 +153,13 @@ Promise.all([preloadImages('.gl-img')]).then(() => {
   if (isFirstLoad()) {
     // This block will only execute on the first load of the page
     performLoadingEffect();
+    showTime();
   } else {
     // This block will execute on subsequent loads or route changes within the same page
     if (!isNavigatingAway) {
       // If the user is not navigating away (just changing sections within the same page), perform the loading effect
       performLoadingEffect();
+      showTime();
     } else {
       home.classList.remove('loading');
       loader.style.display = "none";

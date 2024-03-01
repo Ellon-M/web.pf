@@ -158,25 +158,68 @@ const home = `
   <div id="projects" class="sec-2-container">
     <h2 class="projects-title">
       <span class="projects-title-h2">Some</span>
-      <span class="projects-title-h2"><span class="ita">o</span>f my</span>
-      <span class="projects-title-h2">projects</span>
+      <span class="projects-title-h2"> <span class="ita">thing</span>s </span>
+      <span class="projects-title-h2">i&apos;ve</span>
+      <span class="projects-title-h2">worked on</span>
     </h2>
     <div class="projects-description"></div>
     <div class="content">
-      <div class="work" data-src="https://github.com/Lancelot-SO/carbnb-frontend">
-        <div class="work-date">06 / 23</div>
-        <div class="work-title">CarBnB</div>
+      <div class="work" data-src="https://github.com/Ellon-M/visualizations">
+        <div class="work-date">03 / 22</div>
+        <div class="work-title">Viusalization Lib</div>
         <figure class="work-image js-plane">
-          <div class="aspect" style="--aspect: 151.75%"></div>
-          <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/flavien-7z0vOADmu7c-unsplash_tukidx.jpg"></div>
+          <div class="aspect" style="--aspect: 121.75%"></div>
+          <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287434/wkrib3gonjz3aqmhqp7q.png"></div>
         </figure>
         <figure class="work-image no-plane">
-          <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/flavien-7z0vOADmu7c-unsplash_tukidx.jpg"></div>
+          <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287434/wkrib3gonjz3aqmhqp7q.png"></div>
         </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">Like AirBnB, but for cars. Users can rent and reserve cars for specific dates.</div>
+            <div class="work-bottom-text">Visualization gallery of 150+ data graphics done in python, R and julia languages.</div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+      <div class="work" data-src="https://optuna-dashboard.readthedocs.io/en/latest/">
+        <div class="work-date">ongoing</div>
+        <div class="work-title">Optuna Dashboard</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 79.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287946/xci1gf1dmvvwjwp6tn5s.png"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287946/xci1gf1dmvvwjwp6tn5s.png"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">a real-time web dashboard for Optuna - a hyperparameter optimization framework for ML. You can check the optimization history, hyperparameter importances, etc. in graphs and tables.</div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+      <div class="work" data-src="https://github.com/Ellon-M/ig-scraper">
+        <div class="work-date">11 / 21</div>
+        <div class="work-title">instagram Scraper</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 109.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288278/naimwbrkzju3g9wwfxmb.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288278/naimwbrkzju3g9wwfxmb.jpg"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">  An elegant service that scrapes instagram posts and stories of selected profiles and saves them in the file system. If deployed on an external server, it is configured to run itself after 24 hours to scrape any new stories posted. Runs on a NodeJS backend. </div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -205,22 +248,43 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work" data-src="https://github.com/Ellon-M/space-exploration">
-        <div class="work-date">11 / 22</div>
-        <div class="work-title">Space Exploration</div>
+      <div class="work" data-src="https://github.com/Ellon-M/astroluminance">
+        <div class="work-date">03 / 22</div>
+        <div class="work-title">Astro Luminance</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 140.25%"></div>
-            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222261/spacex-9dF7pCyaM9s-unsplash_cfshxa.jpg"></div>
+            <div class="aspect" style="--aspect: 109.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288468/a3jqcpoc0ge1pcpiurmx.jpg"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222261/spacex-9dF7pCyaM9s-unsplash_cfshxa.jpg"></div>
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288468/a3jqcpoc0ge1pcpiurmx.jpg"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">A web application for a company that provides commercial and scientific space travel services. Allows users to book rockets and join selected space missions.</div>
+            <div class="work-bottom-text">Image processing and super resolution on .fit files of astronomical image data for visual discernment of stars. </div>
             <div class="work-bottom-icon">
-            <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+      <div class="work" data-src="https://github.com/Ellon-M/AmbientGAN">
+        <div class="work-date">02 / 22</div>
+        <div class="work-title">Ambient GAN</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 69.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288580/gkjyvodlisp4ztpr1e9m.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288580/gkjyvodlisp4ztpr1e9m.jpg"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">Generation of piano notes from .midi files using a vanilla GAN with an additional dot product self-attention layer. </div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
           </div>
           <div class="hl"></div>
@@ -230,7 +294,7 @@ const home = `
         <div class="work-date">04 / 22</div>
         <div class="work-title">Olympics Dash</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 75.25%"></div>
+            <div class="aspect" style="--aspect: 63.25%"></div>
             <div class="gl-img" data-src="https://images.unsplash.com/photo-1595663823598-931cd6b854fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></div>
           </figure>
           <figure class="work-image no-plane">
@@ -247,20 +311,62 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work" data-src="https://casavenida.com/">
-        <div class="work-date">01 / 22</div>
-        <div class="work-title">Casavenida</div>
+      <div class="work" data-src="https://github.com/Ellon-M/machine-learning-python/blob/main/S%20-CIS%20-%20mmdet2.8.0/s-cis-mmdetv2.8.0.ipynb">
+        <div class="work-date">11 / 21</div>
+        <div class="work-title">Cell Instance Segmentation</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 86.5%"></div>
-            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222264/jessica-furtney-YOoucEImrKw-unsplash_uhnmja.jpg"></div>  
+            <div class="aspect" style="--aspect: 88.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709289033/f9fnxsvhk9dx2aso5nrw.png"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222264/jessica-furtney-YOoucEImrKw-unsplash_uhnmja.jpg"></div>  
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709289033/f9fnxsvhk9dx2aso5nrw.png"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">Real Estate Search Engine that links buyers with verified direct sellers of Real Estate.</div>
+            <div class="work-bottom-text">Instance segmentation of neuronal cells to detect and delienate distinct neuronal cell types from microscopic images used in neurological disorder studies. Utilized mmdetection 2.8.</div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+      <div class="work" data-src="https://github.com/Ellon-M/machine-learning-python/blob/main/pfdd-object-detection-image-classification.ipynb">
+        <div class="work-date">10 / 21</div>
+        <div class="work-title">Object detection + image classification</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 56.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709290008/zv2z40xrunpo5uxvropi.png"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709290008/zv2z40xrunpo5uxvropi.png"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text"> Object detection + image classification task of diseased passion fruits using tensorflow 2.</div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+      <div class="work" data-src="https://github.com/Ellon-M/machine-learning-python/blob/main/ventilatorpressure.ipynb">
+        <div class="work-date">10 / 21</div>
+        <div class="work-title">Time-series Pressure Analysis & Prediction</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 66.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709290289/jbdtvtatr9ckrbgq5ifr.png"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709290289/jbdtvtatr9ckrbgq5ifr.png"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text"> Analysis on breath data recorded by ventilator machines on patients physically unable to breathe by themselves.</div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -531,7 +637,7 @@ const home = `
             <div class="footer-info-time-country">
               Kenya
             </div>
-            <div class="footer-info-time-hrs">
+            <div class="footer-info-time-hrs" id="MyClock">
             [00:00]
             </div>
           </div>

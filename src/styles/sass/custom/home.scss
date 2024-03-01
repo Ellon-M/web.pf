@@ -377,7 +377,7 @@ img {
   grid-auto-flow: column;
   font-family: NeueHaasDisplay, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   padding-left: 4.89583vw;
-  padding-right: 4.89583vw;
+  padding-right: 24.89583vw;
   padding-top: 15.625vw;
 
   &-h2 {
@@ -400,7 +400,7 @@ img {
 
   .projects-title-h2:nth-of-type(2) {
     padding: 0;
-    margin: 0;
+    margin: 0 -3.6rem;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -411,18 +411,33 @@ img {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  .projects-title-h2:nth-of-type(4) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 @media (min-width: 961px) {
   .projects-title-h2:nth-of-type(2) {
-      grid-column-start: 4;
+      padding: 1rem 0;
+      grid-row-start: 2;
+      grid-column-start: 3;
       grid-column-end: 4;
   }
 
   .projects-title-h2:nth-of-type(3) {
-    grid-row-start: 2;
-    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+.projects-title-h2:nth-of-type(4) {
+  padding: 1rem 0;
+  grid-row-start: 4;
+  grid-column-start: 4;
+  grid-column-end: 4;
 }
 }
 

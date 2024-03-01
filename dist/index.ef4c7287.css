@@ -366,7 +366,7 @@ img {
   grid-auto-flow: column;
   padding-top: 15.625vw;
   padding-left: 4.89583vw;
-  padding-right: 4.89583vw;
+  padding-right: 24.8958vw;
   font-family: NeueHaasDisplay, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   font-size: 9.89583vw;
   font-weight: 400;
@@ -393,7 +393,7 @@ img {
   .projects-title-h2:nth-of-type(2) {
     grid-column: 2 / 3;
     grid-row-start: 2;
-    margin: 0;
+    margin: 0 -3.6rem;
     padding: 0;
   }
 
@@ -401,16 +401,29 @@ img {
     grid-column: 1 / 3;
     grid-row-start: 3;
   }
+
+  .projects-title-h2:nth-of-type(4) {
+    grid-column: 1 / 3;
+    grid-row-start: 4;
+  }
 }
 
 @media (min-width: 961px) {
   .projects-title-h2:nth-of-type(2) {
-    grid-column: 4 / 4;
+    grid-column: 3 / 4;
+    grid-row-start: 2;
+    padding: 1rem 0;
   }
 
   .projects-title-h2:nth-of-type(3) {
-    grid-column: 2 / 4;
-    grid-row-start: 2;
+    grid-column: 1 / 4;
+    grid-row-start: 4;
+  }
+
+  .projects-title-h2:nth-of-type(4) {
+    grid-column: 4 / 4;
+    grid-row-start: 4;
+    padding: 1rem 0;
   }
 }
 

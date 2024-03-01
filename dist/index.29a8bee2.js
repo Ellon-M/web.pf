@@ -541,14 +541,14 @@ var __importDefault = this && this.__importDefault || function(mod) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const Smooth_1 = __importDefault(require("f94a970b15bb6a56"));
-const landing_1 = require("c16b896ed2eff19");
-const marquee_1 = require("507c35ebe43b1661");
-const nav_1 = __importDefault(require("14791fe9e83213a1"));
-const work_1 = require("b3e808521dd464b9");
-const magnetic_1 = require("c1ab6b695b8cd1e7");
-const liquid_1 = require("38c17654651419aa");
-const utils_1 = require("3bdb60ea38c93d57");
+const Smooth_1 = __importDefault(require("9ddc3dc626d87b6"));
+const landing_1 = require("28034657599f0b7");
+const marquee_1 = require("e79c41f7b90b887e");
+const nav_1 = __importDefault(require("845c316ad10575c7"));
+const work_1 = require("b94200a5589fb6c");
+const magnetic_1 = require("f1665a64065ff94c");
+const liquid_1 = require("a0e94e9dec7225a6");
+const utils_1 = require("ad4a5b26ed6cc31d");
 const loader = document.querySelector(".loading-page");
 const home = document.querySelector(".home-container");
 let isPageLoaded = false;
@@ -609,6 +609,25 @@ const initializeMarquee = ()=>{
 const initializeSmooth = ()=>{
     new Smooth_1.default();
 };
+function showTime() {
+    var date = new Date();
+    let h = date.getHours(); // 0 - 23
+    let m = date.getMinutes(); // 0 - 59
+    let s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    if (h == 0) h = 12;
+    if (h > 12) {
+        h = h - 12;
+        session = "PM";
+    }
+    h = h < 10 ? "0" + h : h;
+    m = m < 10 ? "0" + m : m;
+    s = s < 10 ? "0" + s : s;
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClock").innerText = time;
+    document.getElementById("MyClock").textContent = time;
+    setTimeout(showTime, 1000);
+}
 function handleLinkClick(event) {
     const link = event.currentTarget;
     const targetSection = document.querySelector(link.getAttribute("href"));
@@ -642,12 +661,16 @@ function performLoadingEffect() {
 Promise.all([
     (0, utils_1.preloadImages)(".gl-img")
 ]).then(()=>{
-    if (isFirstLoad()) // This block will only execute on the first load of the page
-    performLoadingEffect();
-    else // This block will execute on subsequent loads or route changes within the same page
-    if (!isNavigatingAway) // If the user is not navigating away (just changing sections within the same page), perform the loading effect
-    performLoadingEffect();
-    else {
+    if (isFirstLoad()) {
+        // This block will only execute on the first load of the page
+        performLoadingEffect();
+        showTime();
+    } else // This block will execute on subsequent loads or route changes within the same page
+    if (!isNavigatingAway) {
+        // If the user is not navigating away (just changing sections within the same page), perform the loading effect
+        performLoadingEffect();
+        showTime();
+    } else {
         home.classList.remove("loading");
         loader.style.display = "none";
         document.body.style.overflow = "auto";
@@ -655,13 +678,13 @@ Promise.all([
     }
 });
 
-},{"f94a970b15bb6a56":"iwxx7","c16b896ed2eff19":"19si6","507c35ebe43b1661":"iypHO","14791fe9e83213a1":"6V6ve","b3e808521dd464b9":"9GfeG","c1ab6b695b8cd1e7":"csF32","38c17654651419aa":"3Zrco","3bdb60ea38c93d57":"9SKTc"}],"iwxx7":[function(require,module,exports) {
+},{"9ddc3dc626d87b6":"iwxx7","28034657599f0b7":"19si6","e79c41f7b90b887e":"iypHO","845c316ad10575c7":"6V6ve","b94200a5589fb6c":"9GfeG","f1665a64065ff94c":"csF32","a0e94e9dec7225a6":"3Zrco","ad4a5b26ed6cc31d":"9SKTc"}],"iwxx7":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const events_1 = require("b1308d43980b40f8");
-const utils_1 = require("1b59004ad8c7f5");
+const events_1 = require("cadc1fea731e9105");
+const utils_1 = require("a3fb456f6c7f8cf9");
 class Smooth {
     constructor(){
         this.bindMethods();
@@ -729,7 +752,7 @@ class Smooth {
 }
 exports.default = Smooth;
 
-},{"b1308d43980b40f8":"iBfoy","1b59004ad8c7f5":"9SKTc"}],"iBfoy":[function(require,module,exports) {
+},{"cadc1fea731e9105":"iBfoy","a3fb456f6c7f8cf9":"9SKTc"}],"iBfoy":[function(require,module,exports) {
 "use strict";
 var __importDefault = this && this.__importDefault || function(mod) {
     return mod && mod.__esModule ? mod : {
@@ -740,16 +763,16 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.GlobalResize = exports.GlobalScroll = exports.GlobalRaf = exports.Events = void 0;
-const Events_1 = __importDefault(require("5ef941a8cb575566"));
+const Events_1 = __importDefault(require("721495809ba905d6"));
 exports.Events = Events_1.default;
-const Raf_1 = __importDefault(require("bfdc877f93c3a2d4"));
+const Raf_1 = __importDefault(require("d6fc76e498c9a8f6"));
 exports.GlobalRaf = Raf_1.default;
-const Scroll_1 = __importDefault(require("bab251efd2526a8f"));
+const Scroll_1 = __importDefault(require("2c782561115e1be"));
 exports.GlobalScroll = Scroll_1.default;
-const Resize_1 = __importDefault(require("d704d2b391490758"));
+const Resize_1 = __importDefault(require("9cca6a1be39ea0bd"));
 exports.GlobalResize = Resize_1.default;
 
-},{"5ef941a8cb575566":"1CMQP","bfdc877f93c3a2d4":"38qfl","bab251efd2526a8f":"2mjr4","d704d2b391490758":"8NxuG"}],"1CMQP":[function(require,module,exports) {
+},{"721495809ba905d6":"1CMQP","d6fc76e498c9a8f6":"38qfl","2c782561115e1be":"2mjr4","9cca6a1be39ea0bd":"8NxuG"}],"1CMQP":[function(require,module,exports) {
 "use strict";
 var __createBinding = this && this.__createBinding || (Object.create ? function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -785,10 +808,10 @@ var __importStar = this && this.__importStar || function(mod) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const Emitter = __importStar(require("ba3351332d10fd21"));
+const Emitter = __importStar(require("fff2ed282268623d"));
 exports.default = new Emitter.TinyEmitter();
 
-},{"ba3351332d10fd21":"2GwCf"}],"2GwCf":[function(require,module,exports) {
+},{"fff2ed282268623d":"2GwCf"}],"2GwCf":[function(require,module,exports) {
 function E() {
 // Keep this empty so it's easier to inherit from
 // (via https://github.com/lipsmack from https://github.com/scottcorgan/tiny-emitter/issues/3)
@@ -846,9 +869,9 @@ var __importDefault = this && this.__importDefault || function(mod) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const gsap_1 = __importDefault(require("b99b3bbced11d2b2"));
-const utils_1 = require("13cb137e31ab3c2c");
-const Events_1 = __importDefault(require("e50e0b9e9d4dff54"));
+const gsap_1 = __importDefault(require("bf339a65a04db41c"));
+const utils_1 = require("2a6f0605860dcccb");
+const Events_1 = __importDefault(require("78b6b0c9079694b1"));
 class Raf {
     constructor(){
         this.target = 0;
@@ -878,7 +901,7 @@ class Raf {
 }
 exports.default = new Raf();
 
-},{"b99b3bbced11d2b2":"fPSuC","13cb137e31ab3c2c":"9SKTc","e50e0b9e9d4dff54":"1CMQP"}],"fPSuC":[function(require,module,exports) {
+},{"bf339a65a04db41c":"fPSuC","2a6f0605860dcccb":"9SKTc","78b6b0c9079694b1":"1CMQP"}],"fPSuC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
@@ -4903,8 +4926,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.wrapElements = exports.map = exports.getRandomFloat = exports.distance = exports.getMousePos = exports.getViewport = exports.calcWinsize = exports.lineEquation = exports.dist = exports.lerp = exports.sin = exports.cos = exports.HALF_PI = exports.angle = exports.fadeInOut = exports.fadeOut = exports.fadeIn = exports.randRange = exports.randIn = exports.rand = exports.floor = exports.preloadImages = exports.preloadFonts = void 0;
-const webfontloader_1 = __importDefault(require("340f9b3bc32107d2"));
-const imagesloaded_1 = __importDefault(require("155f3c126846ea81"));
+const webfontloader_1 = __importDefault(require("611aee33b0b96f62"));
+const imagesloaded_1 = __importDefault(require("d9a944a5ad879764"));
 const preloadFonts = ()=>{
     return new Promise((resolve)=>{
         webfontloader_1.default.load({
@@ -5005,7 +5028,7 @@ const wrapElements = (elems, wrapType, wrapClass)=>{
 };
 exports.wrapElements = wrapElements;
 
-},{"340f9b3bc32107d2":"3OQ6Z","155f3c126846ea81":"aYzyZ"}],"3OQ6Z":[function(require,module,exports) {
+},{"611aee33b0b96f62":"3OQ6Z","d9a944a5ad879764":"aYzyZ"}],"3OQ6Z":[function(require,module,exports) {
 /* Web Font Loader v1.6.28 - (c) Adobe Systems, Google. License: Apache 2.0 */ (function() {
     function aa(a, b, c) {
         return a.call.apply(a.bind, arguments);
@@ -5659,7 +5682,7 @@ exports.wrapElements = wrapElements;
  */ (function(window1, factory) {
     // universal module definition
     if (0, module.exports) // CommonJS
-    module.exports = factory(window1, require("95d02228969d3bf9"));
+    module.exports = factory(window1, require("3530a245e72275d6"));
     else // browser global
     window1.imagesLoaded = factory(window1, window1.EvEmitter);
 })(typeof window !== "undefined" ? window : this, function factory(window1, EvEmitter) {
@@ -5920,7 +5943,7 @@ exports.wrapElements = wrapElements;
     return ImagesLoaded;
 });
 
-},{"95d02228969d3bf9":"7rCHo"}],"7rCHo":[function(require,module,exports) {
+},{"3530a245e72275d6":"7rCHo"}],"7rCHo":[function(require,module,exports) {
 /**
  * EvEmitter v2.1.1
  * Lil' event emitter
@@ -6004,7 +6027,7 @@ var __importDefault = this && this.__importDefault || function(mod) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const Events_1 = __importDefault(require("28bd40b50daa877d"));
+const Events_1 = __importDefault(require("c60f3c25850d74df"));
 class Scroll {
     constructor(){
         this.init();
@@ -6023,7 +6046,7 @@ class Scroll {
 }
 exports.default = new Scroll();
 
-},{"28bd40b50daa877d":"1CMQP"}],"8NxuG":[function(require,module,exports) {
+},{"c60f3c25850d74df":"1CMQP"}],"8NxuG":[function(require,module,exports) {
 "use strict";
 var __importDefault = this && this.__importDefault || function(mod) {
     return mod && mod.__esModule ? mod : {
@@ -6033,7 +6056,7 @@ var __importDefault = this && this.__importDefault || function(mod) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const Events_1 = __importDefault(require("fd076a1a8198a16e"));
+const Events_1 = __importDefault(require("d78255db53b0dba5"));
 class Resize {
     constructor(){
         this.init();
@@ -6050,7 +6073,7 @@ class Resize {
 }
 exports.default = new Resize();
 
-},{"fd076a1a8198a16e":"1CMQP"}],"19si6":[function(require,module,exports) {
+},{"d78255db53b0dba5":"1CMQP"}],"19si6":[function(require,module,exports) {
 "use strict";
 var __importDefault = this && this.__importDefault || function(mod) {
     return mod && mod.__esModule ? mod : {
@@ -6061,10 +6084,10 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.Home = void 0;
-const splitting_1 = __importDefault(require("e1debbfc918ceaac"));
-const gsap_1 = require("40c8d7e5cb5e473c");
-require("16cf30feb4d01598");
-require("3c91ff94082cd828");
+const splitting_1 = __importDefault(require("f2a3a2adfb9fccb1"));
+const gsap_1 = require("f864027cc7e78ab0");
+require("81bc687f3075bdb8");
+require("a61fb047f39f885f");
 (0, splitting_1.default)({});
 class Home {
     constructor(el){
@@ -6133,7 +6156,7 @@ class Home {
 }
 exports.Home = Home;
 
-},{"e1debbfc918ceaac":"77jB6","40c8d7e5cb5e473c":"fPSuC","16cf30feb4d01598":"3uR7n","3c91ff94082cd828":"7jeGL"}],"77jB6":[function(require,module,exports) {
+},{"f2a3a2adfb9fccb1":"77jB6","f864027cc7e78ab0":"fPSuC","81bc687f3075bdb8":"3uR7n","a61fb047f39f885f":"7jeGL"}],"77jB6":[function(require,module,exports) {
 (function(global, factory) {
     module.exports = factory();
 })(this, function() {
@@ -6495,7 +6518,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.Marquee = void 0;
-const gsap_1 = require("7c0876c7994899c5");
+const gsap_1 = require("40c8f37fc8cc4160");
 class Marquee {
     constructor(){
         this.handleIntersection = (entries, observer)=>{
@@ -6584,7 +6607,7 @@ class Marquee {
 }
 exports.Marquee = Marquee;
 
-},{"7c0876c7994899c5":"fPSuC"}],"6V6ve":[function(require,module,exports) {
+},{"40c8f37fc8cc4160":"fPSuC"}],"6V6ve":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -6722,13 +6745,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.ScrollCanvas = void 0;
-const THREE = __importStar(require("2408bb2b03460064"));
-const fragment_glsl_1 = __importDefault(require("5cdf9239d517930c"));
-const vertex_glsl_1 = __importDefault(require("3792e106bc0793f6"));
-const GLObject_1 = require("bff11a55c8d927df");
-const index_1 = __importDefault(require("ad467b2aee745be8"));
-const gsap_1 = __importDefault(require("d165d4b37ebbdacb"));
-const events_1 = require("8f444216fbda0fd7");
+const THREE = __importStar(require("7d4b38e78d36b56b"));
+const fragment_glsl_1 = __importDefault(require("f55c8bbe16cb7166"));
+const vertex_glsl_1 = __importDefault(require("5a3799d751c1991"));
+const GLObject_1 = require("a708aab0e2ec467d");
+const index_1 = __importDefault(require("36c33827dcb4d487"));
+const gsap_1 = __importDefault(require("d7c97540257a5e4b"));
+const events_1 = require("b07108bcf6b25914");
 const planeGeometry = new THREE.PlaneGeometry(1, 1, 100, 100);
 const planeMaterial = new THREE.ShaderMaterial({
     vertexShader: vertex_glsl_1.default,
@@ -6836,7 +6859,7 @@ class ScrollCanvas extends GLObject_1.GlObject {
 }
 exports.ScrollCanvas = ScrollCanvas;
 
-},{"2408bb2b03460064":"ktPTu","5cdf9239d517930c":"fhGUo","3792e106bc0793f6":"21edt","bff11a55c8d927df":"rY2pN","ad467b2aee745be8":"dsTh4","d165d4b37ebbdacb":"fPSuC","8f444216fbda0fd7":"iBfoy"}],"ktPTu":[function(require,module,exports) {
+},{"7d4b38e78d36b56b":"ktPTu","f55c8bbe16cb7166":"fhGUo","5a3799d751c1991":"21edt","a708aab0e2ec467d":"rY2pN","36c33827dcb4d487":"dsTh4","d7c97540257a5e4b":"fPSuC","b07108bcf6b25914":"iBfoy"}],"ktPTu":[function(require,module,exports) {
 /**
  * @license
  * Copyright 2010-2023 Three.js Authors
@@ -36148,9 +36171,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.GlObject = void 0;
-const gsap_1 = __importDefault(require("be2d0ce02305e5f7"));
-const THREE = __importStar(require("2d0e0099bff058e5"));
-const index_1 = __importDefault(require("102a7dd1833fc036"));
+const gsap_1 = __importDefault(require("900d750aa3ef0b4e"));
+const THREE = __importStar(require("5ae370877f48d431"));
+const index_1 = __importDefault(require("5234dbb55364edbe"));
 class GlObject extends THREE.Object3D {
     constructor(el){
         super();
@@ -36205,7 +36228,7 @@ class GlObject extends THREE.Object3D {
 }
 exports.GlObject = GlObject;
 
-},{"be2d0ce02305e5f7":"fPSuC","2d0e0099bff058e5":"ktPTu","102a7dd1833fc036":"dsTh4"}],"dsTh4":[function(require,module,exports) {
+},{"900d750aa3ef0b4e":"fPSuC","5ae370877f48d431":"ktPTu","5234dbb55364edbe":"dsTh4"}],"dsTh4":[function(require,module,exports) {
 "use strict";
 var __createBinding = this && this.__createBinding || (Object.create ? function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -36246,9 +36269,9 @@ var __importDefault = this && this.__importDefault || function(mod) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const gsap_1 = __importDefault(require("4b07193e93c3857"));
-const THREE = __importStar(require("8593ae322d297f1d"));
-const events_1 = require("a5c74b84a799710e");
+const gsap_1 = __importDefault(require("77b404baf7907feb"));
+const THREE = __importStar(require("2e3182b3bba66f62"));
+const events_1 = require("b06d422bf21565e6");
 exports.default = new class {
     constructor(){
         this.run = ({ current  })=>{
@@ -36304,14 +36327,14 @@ exports.default = new class {
     }
 }();
 
-},{"4b07193e93c3857":"fPSuC","8593ae322d297f1d":"ktPTu","a5c74b84a799710e":"iBfoy"}],"csF32":[function(require,module,exports) {
+},{"77b404baf7907feb":"fPSuC","2e3182b3bba66f62":"ktPTu","b06d422bf21565e6":"iBfoy"}],"csF32":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.Magnetic = void 0;
-const gsap_1 = require("d3443df43a69071a");
-const utils_1 = require("65985f45f60e0187");
+const gsap_1 = require("304c2da429aa6edb");
+const utils_1 = require("e83ac66317efe7bb");
 let winsize = (0, utils_1.calcWinsize)();
 window.addEventListener("resize", ()=>winsize = (0, utils_1.calcWinsize)());
 let mousepos = {
@@ -36388,14 +36411,14 @@ class Magnetic {
 }
 exports.Magnetic = Magnetic;
 
-},{"d3443df43a69071a":"fPSuC","65985f45f60e0187":"9SKTc"}],"3Zrco":[function(require,module,exports) {
+},{"304c2da429aa6edb":"fPSuC","e83ac66317efe7bb":"9SKTc"}],"3Zrco":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.Liquid = void 0;
-const gsap_1 = require("91566e89c663740");
-const utils_1 = require("9b6c8d25b19e9f59");
+const gsap_1 = require("824163699b7b5442");
+const utils_1 = require("7dc1db09985ecf");
 class Liquid {
     constructor(){
         this.DOM = {
@@ -36477,6 +36500,6 @@ class Liquid {
 }
 exports.Liquid = Liquid;
 
-},{"91566e89c663740":"fPSuC","9b6c8d25b19e9f59":"9SKTc"}]},["5FHgA","eRfpH"], "eRfpH", "parcelRequire6e9e")
+},{"824163699b7b5442":"fPSuC","7dc1db09985ecf":"9SKTc"}]},["5FHgA","eRfpH"], "eRfpH", "parcelRequire6e9e")
 
 //# sourceMappingURL=index.29a8bee2.js.map
