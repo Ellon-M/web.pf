@@ -166,7 +166,7 @@ const home = `
     <div class="content">
       <div class="work" data-src="https://github.com/Ellon-M/visualizations">
         <div class="work-date">03 / 22</div>
-        <div class="work-title">Viusalization Lib</div>
+        <div class="work-title">Visualization Lib</div>
         <figure class="work-image js-plane">
           <div class="aspect" style="--aspect: 121.75%"></div>
           <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287434/wkrib3gonjz3aqmhqp7q.png"></div>
