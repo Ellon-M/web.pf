@@ -168,7 +168,7 @@ const home = `
     <div class="content">
       <div class="work" data-src="https://github.com/Ellon-M/visualizations">
         <div class="work-date">03 / 22</div>
-        <div class="work-title">Viusalization Lib</div>
+        <div class="work-title">Visualization Lib</div>
         <figure class="work-image js-plane">
           <div class="aspect" style="--aspect: 121.75%"></div>
           <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287434/wkrib3gonjz3aqmhqp7q.png"></div>
@@ -449,6 +449,16 @@ const home = `
         <div class="skill-line"></div>
       </div>
       <div class="skill">
+        <div class="skill-name">Kotlin</div>
+        <div class="skill-desc">Android App Development</div>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Swift</div>
+        <div class="skill-desc">iOS App Development</div>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill">
         <div class="skill-name">Solid.js</div>
         <div class="skill-desc">I use it for the same purposes as React, but for better, more optimal performance in large apps that have a lot of DOM updates</div>
         <div class="skill-line"></div>
@@ -476,16 +486,6 @@ const home = `
       <div class="skill">
         <div class="skill-name">PHP/Laravel</div>
         <div class="skill-desc">Favorite PHP framework. For server side implementations</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Docker</div>
-        <div class="skill-desc">DevOps purposes. App containerization</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Kubernates</div>
-        <div class="skill-desc">Hand in hand with docker - creating clusters for management and deployment of containerized apps</div>
         <div class="skill-line"></div>
       </div>
     </div>
@@ -567,7 +567,7 @@ const home = `
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">03</div>
-                <a href="" class="footer-link">+254 (706) 528 027</a>
+                <a href="" class="footer-link">+254 (768) 554 214</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">04</div>
@@ -644,7 +644,7 @@ const home = `
             </div>
           </div>
           <div class="footer-info-copyright">
-            © 2023. Ellon Mordecai. All rights reserved
+            © 2024. Ellon Mordecai. All rights reserved
           </div>
         </div>
       </div>
