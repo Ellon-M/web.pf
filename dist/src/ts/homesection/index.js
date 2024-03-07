@@ -110,11 +110,13 @@ internalLinks.forEach((link) => {
 });
 function performLoadingEffect() {
     progLoad().then(() => {
-        home.classList.remove('loading');
         loader.style.display = "none";
-        document.body.style.overflow = "auto";
         // Initialize other classes after loading is complete
-        initializeWords();
+        setTimeout(() => {
+            home.classList.remove('loading');
+            document.body.style.overflow = "auto";
+            initializeWords();
+        }, 250);
         initializeElements();
         initializeSticky();
         initializeLiquid();
