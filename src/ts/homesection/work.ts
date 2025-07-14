@@ -77,7 +77,7 @@ export class ScrollCanvas extends GlObject {
   
     Events.on('scroll', this.render.bind(this));
 
-    const mobImgs = document.querySelectorAll('.mob-img');
+    const mobImgs = document.querySelectorAll<HTMLElement>('.mob-img');
     const projects = document.querySelectorAll('.work');
 
     mobImgs.forEach(element => {

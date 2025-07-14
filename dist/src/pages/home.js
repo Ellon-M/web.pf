@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const home = `
 <div class="loading-page">
   <div class="counter">
@@ -670,4 +669,5 @@ const home = `
 </div>
 </div>
 `;
+//# sourceMappingURL=home.js.map
 //# sourceMappingURL=home.js.map
