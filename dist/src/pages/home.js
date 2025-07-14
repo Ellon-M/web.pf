@@ -164,6 +164,139 @@ const home = `
     </h2>
     <div class="projects-description"></div>
     <div class="content">
+    
+      <div class="work" data-src="https://hrms.infopay.co.ke/admin/auth/autologin?username=hrm@samplecompany.com">
+        <div class="work-date">06 / 25</div>
+        <div class="work-title">Human Resource Management Information System</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 99.75%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752522386/pexels-gabby-k-9489090_fwrof5.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752522386/pexels-gabby-k-9489090_fwrof5.jpg"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">A HRMIS top in the industry locally. Wrote major sections of the core API and the UI. </div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+
+      <div class="work" data-src="https://github.com/Ellon-M/speedface-py-conn">
+        <div class="work-date">03 / 25</div>
+        <div class="work-title">Biometric Device Management System</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 88.15%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752523659/acess-control_wmyxbd.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752523659/acess-control_wmyxbd.jpg"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">A ZKTeco Speedface Device Manager for managing user face and palm clock data. </div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+
+      <div class="work" data-src="https://edmorsuites.com/">
+        <div class="work-date">03 / 25</div>
+        <div class="work-title">AirBnB Listings Management Platform</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 108.75%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752521604/Airbnb-friendly-apartments-product_nlc2nl.webp"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752521604/Airbnb-friendly-apartments-product_nlc2nl.webp"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">A website for a local Airbnb Listings Management Group. Features properties managed internally.</div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+
+      <div class="work" data-src="https://semasocial.com/">
+        <div class="work-date">01 / 24</div>
+        <div class="work-title">Social Networking Platform</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 110.75%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752524351/LLERkj1G_400x400_znmylj.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752524351/LLERkj1G_400x400_znmylj.jpg"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">Social Networking Platform that connects job seekers to freshly posted jobs worldwide.</div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+    
+    <div class="work" data-src="https://spmetrics.netlify.app/">
+        <div class="work-date">03 / 23</div>
+        <div class="work-title">Spotify Metrics</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 109.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/david-svihovec-xMH2vteiEY4-unsplash_g9oz9i.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/david-svihovec-xMH2vteiEY4-unsplash_g9oz9i.jpg"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">displays featured Spotify playlists based on the Spotify algorithm selection; shows details of the most popular tracks in each playlist.</div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+
+      <div class="work" data-src="https://github.com/Ellon-M/studio-tour/">
+        <div class="work-date">10 / 22</div>
+        <div class="work-title">Studio Tour</div>
+          <figure class="work-image js-plane">
+            <div class="aspect" style="--aspect: 90.75%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222245/aditya-vyas-wmXVABZ7JBk-unsplash_kbd1m9.jpg"></div>
+          </figure>
+          <figure class="work-image no-plane">
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222245/aditya-vyas-wmXVABZ7JBk-unsplash_kbd1m9.jpg"></div>
+          </figure>
+        <div class="work-bottom">
+          <div class="hl"></div>
+          <div class="work-bottom-content">
+            <div class="work-bottom-text">A web page for a popular film intended to exhibit and display information about a tour of the studio where the film was produced. </div>
+            <div class="work-bottom-icon">
+              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
+            </div>
+          </div>
+          <div class="hl"></div>
+        </div>
+      </div>
+      
       <div class="work" data-src="https://github.com/Ellon-M/visualizations">
         <div class="work-date">03 / 22</div>
         <div class="work-title">Visualization Lib</div>
@@ -185,69 +318,7 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work" data-src="https://optuna-dashboard.readthedocs.io/en/latest/">
-        <div class="work-date">ongoing</div>
-        <div class="work-title">Optuna Dashboard</div>
-          <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 79.25%"></div>
-            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287946/xci1gf1dmvvwjwp6tn5s.png"></div>
-          </figure>
-          <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709287946/xci1gf1dmvvwjwp6tn5s.png"></div>
-          </figure>
-        <div class="work-bottom">
-          <div class="hl"></div>
-          <div class="work-bottom-content">
-            <div class="work-bottom-text">a real-time web dashboard for Optuna - a hyperparameter optimization framework for ML. You can check the optimization history, hyperparameter importances, etc. in graphs and tables.</div>
-            <div class="work-bottom-icon">
-              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
-            </div>
-          </div>
-          <div class="hl"></div>
-        </div>
-      </div>
-      <div class="work" data-src="https://github.com/Ellon-M/ig-scraper">
-        <div class="work-date">11 / 21</div>
-        <div class="work-title">instagram Scraper</div>
-          <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 109.25%"></div>
-            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288278/naimwbrkzju3g9wwfxmb.jpg"></div>
-          </figure>
-          <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288278/naimwbrkzju3g9wwfxmb.jpg"></div>
-          </figure>
-        <div class="work-bottom">
-          <div class="hl"></div>
-          <div class="work-bottom-content">
-            <div class="work-bottom-text">  An elegant service that scrapes instagram posts and stories of selected profiles and saves them in the file system. If deployed on an external server, it is configured to run itself after 24 hours to scrape any new stories posted. Runs on a NodeJS backend. </div>
-            <div class="work-bottom-icon">
-              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
-            </div>
-          </div>
-          <div class="hl"></div>
-        </div>
-      </div>
-      <div class="work" data-src="https://spmetrics.netlify.app/">
-        <div class="work-date">03 / 23</div>
-        <div class="work-title">Spotify Metrics</div>
-          <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 109.25%"></div>
-            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/david-svihovec-xMH2vteiEY4-unsplash_g9oz9i.jpg"></div>
-          </figure>
-          <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222277/david-svihovec-xMH2vteiEY4-unsplash_g9oz9i.jpg"></div>
-          </figure>
-        <div class="work-bottom">
-          <div class="hl"></div>
-          <div class="work-bottom-content">
-            <div class="work-bottom-text">displays featured Spotify playlists based on the Spotify algorithm selection; shows details of the most popular tracks in each playlist.</div>
-            <div class="work-bottom-icon">
-              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
-            </div>
-          </div>
-          <div class="hl"></div>
-        </div>
-      </div>
+      
       <div class="work" data-src="https://github.com/Ellon-M/astroluminance">
         <div class="work-date">03 / 22</div>
         <div class="work-title">Astro Luminance</div>
@@ -290,20 +361,21 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work" data-src="https://github.com/Ellon-M/OlympicsDash">
-        <div class="work-date">04 / 22</div>
-        <div class="work-title">Olympics Dash</div>
+
+      <div class="work" data-src="https://github.com/Ellon-M/ig-scraper">
+        <div class="work-date">11 / 21</div>
+        <div class="work-title">instagram Scraper</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 63.25%"></div>
-            <div class="gl-img" data-src="https://images.unsplash.com/photo-1595663823598-931cd6b854fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></div>
+            <div class="aspect" style="--aspect: 109.25%"></div>
+            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288278/naimwbrkzju3g9wwfxmb.jpg"></div>
           </figure>
           <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://images.unsplash.com/photo-1595663823598-931cd6b854fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"></div>
+            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1709288278/naimwbrkzju3g9wwfxmb.jpg"></div>
           </figure>
         <div class="work-bottom">
           <div class="hl"></div>
           <div class="work-bottom-content">
-            <div class="work-bottom-text">Plotly-Dash interface of previously held summer and winter olympic games dating back to the 1920s.</div>
+            <div class="work-bottom-text">  An elegant service that scrapes instagram posts and stories of selected profiles and saves them in the file system. If deployed on an external server, it is configured to run itself after 24 hours to scrape any new stories posted. Runs on a NodeJS backend. </div>
             <div class="work-bottom-icon">
               <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
             </div>
@@ -311,6 +383,7 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
+      
       <div class="work" data-src="https://github.com/Ellon-M/machine-learning-python/blob/main/S%20-CIS%20-%20mmdet2.8.0/s-cis-mmdetv2.8.0.ipynb">
         <div class="work-date">11 / 21</div>
         <div class="work-title">Cell Instance Segmentation</div>
@@ -332,6 +405,7 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
+      
       <div class="work" data-src="https://github.com/Ellon-M/machine-learning-python/blob/main/pfdd-object-detection-image-classification.ipynb">
         <div class="work-date">10 / 21</div>
         <div class="work-title">Object detection + image classification</div>
@@ -353,6 +427,7 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
+      
       <div class="work" data-src="https://github.com/Ellon-M/machine-learning-python/blob/main/ventilatorpressure.ipynb">
         <div class="work-date">10 / 21</div>
         <div class="work-title">Time-series Pressure Analysis & Prediction</div>
@@ -374,8 +449,9 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
+      
       <div class="work" data-src="https://car-dealer-40c1f.web.app/">
-        <div class="work-date">10 / 21</div>
+        <div class="work-date">07 / 21</div>
         <div class="work-title">Car Dealers </div>
           <figure class="work-image js-plane">
             <div class="aspect" style="--aspect: 94.5%"></div>
@@ -395,27 +471,7 @@ const home = `
           <div class="hl"></div>
         </div>
       </div>
-      <div class="work" data-src="https://github.com/Ellon-M/studio-tour/">
-        <div class="work-date">10 / 22</div>
-        <div class="work-title">Studio Tour</div>
-          <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 90.75%"></div>
-            <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222245/aditya-vyas-wmXVABZ7JBk-unsplash_kbd1m9.jpg"></div>
-          </figure>
-          <figure class="work-image no-plane">
-            <div class="mob-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1691222245/aditya-vyas-wmXVABZ7JBk-unsplash_kbd1m9.jpg"></div>
-          </figure>
-        <div class="work-bottom">
-          <div class="hl"></div>
-          <div class="work-bottom-content">
-            <div class="work-bottom-text">A web page for a popular film intended to exhibit and display information about a tour of the studio where the film was produced. </div>
-            <div class="work-bottom-icon">
-              <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-arrow work-bottom__icon-svg"><path d="M20 100V90H82.95L0 7.05L7.05 0L90 82.95V20H100V100H20Z"></path></svg>
-            </div>
-          </div>
-          <div class="hl"></div>
-        </div>
-      </div>
+
     </div>
   </div>
   <div id="skills" class="section-skills">
@@ -432,58 +488,23 @@ const home = `
     </div>
     <div class="skills">
       <div class="skill">
-        <div class="skill-name">HTML/CSS</div>
-        <div class="skill-desc">Basic markup technologies that bring my designs and apps to the browser</div>
+        <div class="skill-name">Backend Web Application Development</div>
+        <div class="skill-desc">PHP, Python, Ruby on Rails</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">JS/TS</div>
-        <div class="skill-desc">(JavaScript/TypeScript) for frontend implementation and broswer logic</div>
+        <div class="skill-name">Frontend Web Application Development</div>
+        <div class="skill-desc">Nextjs, Reactjs</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">React.js</div>
-        <div class="skill-desc">Favorite Frontend framework, for apps that require heavy functionality and reactivity</div>
+        <div class="skill-name">Data Analytics, ML and AI</div>
+        <div class="skill-desc">Past fun activity - Ex Kaggle Competitor & Computer Vision Meddler</div>
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">Kotlin</div>
-        <div class="skill-desc">Android App Development</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Swift</div>
-        <div class="skill-desc">iOS App Development</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Solid.js</div>
-        <div class="skill-desc">I use it for the same purposes as React, but for better, more optimal performance in large apps that have a lot of DOM updates</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Next.js</div>
-        <div class="skill-desc">Always hand in hand with React - for server side rendering and static site generation</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">GraphQL</div>
-        <div class="skill-desc">For writing API queries from an existing server-side backend implementation</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Ruby on Rails</div>
-        <div class="skill-desc">Server side implemenation. Writing API's and DB models</div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Node.js</div>
-        <div class="skill-desc">For the same reasons I use Ruby, but used mainly with serverless technologies </div>
-        <div class="skill-line"></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">PHP/Laravel</div>
-        <div class="skill-desc">Favorite PHP framework. For server side implementations</div>
+        <div class="skill-name">Native/Mobile App Development</div>
+        <div class="skill-desc">Kotlin, Flutter</div>
         <div class="skill-line"></div>
       </div>
     </div>
@@ -493,8 +514,8 @@ const home = `
       <h2> ab<span class="ita">o</span>ut myself </h2>
       <div class="about-more-info">
         <p> I love to engineer stimulating, interactive but user friendly experiences on the web </p>
-        <p> I BELIEVE THAT EVERY PROJECT THAT I DO SHOULD HAVE AN OVERVALUE </p>
-        <p>I always desire to achieve the most optimal solution to a problem above all else</p>
+        <p> I grind, unreasonably so </p>
+        <p> I always desire to achieve the most optimal solution to a problem above all else</p>
       </div>
       <div class="about-res-link">
         <a href="https://ellon-m.github.io/e.res">View My Resume</a>
@@ -529,10 +550,6 @@ const home = `
                 <a href="https://github.com/Ellon-M" class="footer-link">Github</a>
               </div>
               <div class="footer-links-item">
-                <div class="footer-num">03</div>
-                <a href="https://wellfound.com/u/ellon-mordecai" class="footer-link">Wellfound</a>
-              </div>
-              <div class="footer-links-item">
                 <div class="footer-num">04</div>
                 <a href="https://www.behance.net/ellon/" class="footer-link">Behance</a>
               </div>
@@ -542,7 +559,7 @@ const home = `
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">06</div>
-                <a href="https://www.instagram.com/ocuvine/" class="footer-link">Instagram</a>
+                <a href="https://www.instagram.com/circumscape/" class="footer-link">Instagram</a>
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">07</div>
@@ -569,7 +586,7 @@ const home = `
               </div>
               <div class="footer-links-item">
                 <div class="footer-num">04</div>
-                <a href="https://wa.me/+254706528027" class="footer-link">WhatsApp</a>
+                <a href="https://wa.me/+254768554214" class="footer-link">WhatsApp</a>
               </div>
             </div>
           </div>
@@ -642,7 +659,7 @@ const home = `
             </div>
           </div>
           <div class="footer-info-copyright">
-            © 2024. Ellon Mordecai. All rights reserved
+            © 2025. Ellon Mordecai. All rights reserved
           </div>
         </div>
       </div>
