@@ -1,3 +1,4 @@
+"use strict";
 const home = `
 <div class="loading-page">
   <div class="counter">
@@ -211,7 +212,7 @@ const home = `
         <div class="work-date">03 / 25</div>
         <div class="work-title">AirBnB Listings Management Platform</div>
           <figure class="work-image js-plane">
-            <div class="aspect" style="--aspect: 68.75%"></div>
+            <div class="aspect" style="--aspect: 60.75%"></div>
             <div class="gl-img" data-src="https://res.cloudinary.com/denphvygd/image/upload/v1752521604/Airbnb-friendly-apartments-product_nlc2nl.webp"></div>
           </figure>
           <figure class="work-image no-plane">
@@ -496,7 +497,7 @@ const home = `
         <div class="skill-line"></div>
       </div>
       <div class="skill">
-        <div class="skill-name">Data Analytics, ML and AI</div>
+        <div class="skill-name">Data Analytics, Machine Learning & AI</div>
         <div class="skill-desc">Past fun activity - Ex Kaggle Competitor & Computer Vision Meddler</div>
         <div class="skill-line"></div>
       </div>
@@ -668,4 +669,5 @@ const home = `
 </div>
 </div>
 `;
-//# sourceMappingURL=home.js.map
+
+//# sourceMappingURL=index.48791e11.js.map

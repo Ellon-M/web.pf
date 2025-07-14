@@ -1,3 +1,4 @@
+"use strict";
 const home = `
 <div class="loading-page">
   <div class="counter">
@@ -668,4 +669,5 @@ const home = `
 </div>
 </div>
 `;
+//# sourceMappingURL=home.js.map
 //# sourceMappingURL=home.js.map
