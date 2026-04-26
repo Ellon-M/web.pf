@@ -164,7 +164,7 @@ const home = `
     <div class="projects-description"></div>
     <div class="content">
     
-      <div class="work" data-src="https://hrms.infopay.co.ke/admin/auth/autologin?username=hrm@samplecompany.com">
+      <div class="work" data-src="https://demo.infopay.co.ke/admin">
         <div class="work-date">06 / 25</div>
         <div class="work-title">Human Resource Management Information System</div>
           <figure class="work-image js-plane">
